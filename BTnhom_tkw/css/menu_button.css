@@ -1,0 +1,56 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Nút mở menu */
+.menu_button {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #285c08; /* xanh giống header */
+    color: #fff; /* chữ trắng */
+    border: none;
+}
+/* Nút đóng menu */
+.close_button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    background: #FFEFD5;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Menu sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Ẩn bên trái */
+    width: 250px;
+    height: 100%;
+    background: #FFEFD5;
+    color: #000;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+    .sidebar a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: black;
+        display: block;
+        transition: 0.2s;
+    }
+
+        .sidebar a:hover {
+            background: #FFEFD5;
+        }
+
+    /* Khi mở thì trượt ra */
+    .sidebar.active {
+        left: 0;
+    }

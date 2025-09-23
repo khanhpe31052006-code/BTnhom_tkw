@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/phan1.css" />
+    <link rel="stylesheet" href="css/menu_button.css" />
+</head>
+<body>
+    <!--Phần này cấm đụng không thôi lỗi-->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+    <!-- Thanh tiêu đề -->
+    <div class="header">
+        <!-- MENU -->
+        <!--Menu button-->
+        <button class="menu_button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="sidebar" id="sidebar">
+            <button class="close_button" onclick="toggleMenu()">×</button>
+            <a href="trangchu.html">Trang chủ</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Tìm kiếm -->
+        <input type="checkbox" id="search-toggle">
+        <label for="search-toggle">&#128269;</label>
+        <div class="search-box">
+            <input type="search" placeholder="Tìm kiếm...">
+        </div>
+
+        <!-- Giỏ hàng -->
+        <a href="#" class="cart">&#128722;</a>
+    </div>
+    <div>
+        <img width="100%" src="Images/anhnen-1.png" />
+    </div>
+
+    <!--Nội dung-->
+    <div style="width:30%;background-color:#fef5f5;margin:auto;padding:20px 25px;">
+        <div style="text-align:center;">
+            <h1>Giới thiệu <br />thương hiệu</h1>
+            <p>
+                Chúng tôi là những người yêu thiên nhiên, luôn say đắm trong việc khám phá các nguyên liệu quen thuộc trong đời sống hằng ngày của người Việt Nam từ rau củ, trái cây, để làm sao để đưa chúng vào trong các sản phẩm mỹ phẩm mà các chất dinh dưỡng của chúng được giữ lại một cách nguyên vẹn và hoàn hảo. Những thực phẩm này rất giàu vitamin, chất chống oxi hóa và các khoáng chất để tăng cường sức khỏe của làn da. Vậy còn gì tuyệt vời hơn là đưa chúng lên làn da của bạn một cách trọn vẹn nhất có thể. Qua quá trình nghiên cứu và thử nghiệm, những công thức được hình thành và trở nên hoàn hảo. Chúng đã phát huy tác dụng và đáp ứng được mong mỏi của người Việt: an toàn và hiệu quả.
+                Đối với chúng tôi, những gì đưa lên da phải an toàn, hiệu quả và không có nguồn gốc từ động vật
+            </p>
+        </div>
+    </div>
+    <div style="width:40%;margin:auto;">
+        <img src="Images/anhbia1.jpg" width="100%" /> <br />
+
+        <img src="Images/anhbia2.jpg" width="100%" />
+    </div>
+    <div style="width:40%;margin:auto">
+        <p>Cocoon – Mỹ phẩm thuần chay Việt </p>
+        <img style="width:100%;margin:auto" src="images/anhbia3.jpg" />
+        <img style="width:100%;margin:auto" src="Images/anhbia4.jpg" />
+    </div>
+    <div style="text-align: center; background-color: #fef5f5; margin: auto; width: 30%; padding: 20px 25px; ">
+        <h1>Nguyên liệu <br />thuần chay</h1>
+        <p>
+            "Hồn Việt trong chai"
+            Chúng tôi viết nên câu chuyện về hoa trái đặc hữu của Việt Nam, rất gần gũi và quen thuộc từ tên gọi, mùi hương và cả vùng đất sản sinh ra chúng.”
+
+        </p>
+    </div>
+    <div style="background-color:#cf9b9b;width:80%;margin:auto;text-align:center;padding:5px">
+        <p>Chương trình</p>
+        <p style="font-size:36px">SỐNG XANH CÙNG COCOON</p>
+        <button style="width:200px;padding:10px 15px;border-radius:5px">
+            <a href="SonhXanhCungCoCoon.html" style="text-decoration:none;" target="_blank">
+                Tìm hiểu thêm
+            </a>
+        </button>
+
+    </div>
+    <div>
+        <h1>Cocoon Việt Nam:</h1>
+        <table style="width:80%;margin:auto">
+            <tr>
+                <td>
+                    <img width="500" height="400" src="Images/news1.jpg" /><br />
+
+                </td>
+
+                <td>
+                    <img width="500" height="400" src="Images/news2.jpg" /><br />
+
+
+                </td>
+                <td>
+                    <img width="500" height="400" src="Images/news3.jpg" /><br />
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://www.cocoonvietnam.com/bai-viet/cocoon-da-co-mat-tai-nhat-ban" target="_blank">Cocoon đã có mặt tại Nhật Bản</a>
+                </td>
+                <td>
+                    <a href="https://www.cocoonvietnam.com/bai-viet/mung-thang-moi-truong-2025-guong-tu-nhua-tai-che">Mừng tháng môi trường 2024 - "Yêu lại những điều đã cũ"</a>
+                </td>
+                <td>
+                    <a href="https://www.cocoonvietnam.com/bai-viet/chuong-trinh-thu-hoi-vo-chai-nam-2025">Chương trình "Thu hồi vỏ chai - Đổi túi xanh" năm 2025</a>
+                </td>
+            </tr>
+
+        </table>
+        <a href="">Tìm hiểu thêm</a>
+    </div>
+
+
+
+</body>
+</html>

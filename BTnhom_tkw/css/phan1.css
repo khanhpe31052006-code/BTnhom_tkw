@@ -1,0 +1,79 @@
+﻿body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+/* Ẩn checkbox */
+#menu-toggle, #search-toggle {
+    display: none;
+}
+
+/* Thanh trên cùng */
+.header {
+    background: #285c08;
+    color: white;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    /* Nút biểu tượng */
+    .header label {
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+/* Danh sách menu */
+.menu-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #285c08;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    width: 180px;
+}
+
+    .menu-list li {
+        border-top: 1px solid #fff;
+    }
+
+    .menu-list a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+        .menu-list a:hover {
+            background: #3c7e10;
+        }
+
+#menu-toggle:checked + label + ul.menu-list {
+    display: block;
+}
+
+/* Ô tìm kiếm ẩn/hiện */
+.search-box {
+    display: none;
+}
+
+#search-toggle:checked + label + .search-box {
+    display: block;
+}
+
+.search-box input {
+    padding: 5px;
+}
+
+/* Giỏ hàng biểu tượng */
+.cart {
+    font-size: 24px;
+    margin-left: auto;
+    text-decoration: none;
+    color: white;
+}

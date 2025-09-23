@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        body {
+            font-size: 24px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/menu_button.css" />
+    <link rel="stylesheet" href="css/phan1.css" />
+</head>
+<body>
+    <!--Phần này cấm đụng không thôi lỗi-->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+    <!-- Thanh tiêu đề -->
+    <div class="header">
+        <!-- MENU -->
+        <!--Menu button-->
+        <button class="menu_button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="sidebar" id="sidebar">
+            <button class="close_button" onclick="toggleMenu()">×</button>
+            <a href="trangchu.html">Trang chủ</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Tìm kiếm -->
+        <input type="checkbox" id="search-toggle">
+        <label for="search-toggle">&#128269;</label>
+        <div class="search-box">
+            <input type="search" placeholder="Tìm kiếm...">
+        </div>
+
+        <!-- Giỏ hàng -->
+        <a href="#" class="cart">&#128722;</a>
+    </div>
+    <div>
+        <img width="100%" src="Images/anhnen-1.png" />
+    </div>
+    <!--Nội dung-->
+    <img style="width:100%" src="Images/anhnen4.png" />
+    <div style="width:40%;margin:auto">
+        <p style="font-size:24px;">Tiếp tục lan tỏa các “thông điệp xanh” hướng đến Mẹ Trái Đất, nhân rộng phạm vi chương trình đổi vỏ chai cũ và đáp ứng mong mỏi của rất nhiều quý khách hàng về chương trình này, bắt đầu từ ngày 02/06/2021, Cocoon sẽ áp dụng thêm hình thức đổi vỏ chai online. Chúng tôi gọi đó là "Điểm Xanh Online". Từ đây, dù bạn ở bất cứ nơi đâu tại Việt Nam thì đều có thể tham gia đổi vỏ chai cùng Cocoon.</p>
+        <h2>Quy trình tham gia đổi vỏ chai online theo 3 bước sau:</h2>
+        <ul>
+            <li>
+                Bước 1:Truy cập <a href="FormDky.html">TẠI ĐÂY</a> và điền đầy đủ thông tin theo mẫu đăng ký
+
+            </li>
+            <li>
+                Bước 2:Đóng gói, ghi rõ họ tên, thông tin của bạn trên kiện hàng và gửi vỏ chai/hũ rỗng đến Kho Cocoon
+                theo địa chỉ: Lô đất số HH, Đường số 11 và Đường số 3, Khu công nghiệp Xuyên Á, xã Mỹ Hạnh Bắc, huyện Đức Hòa, tỉnh Long An, Việt Nam - Hotline: 1900 9300
+            </li>
+            <li>Cocoon sẽ đối chiếu các vỏ chai và thông tin trên biểu mẫu, sau đó gửi sản phẩm mới qua đường chuyển phát</li>
+        </ul>
+    </div>
+    <div style="width:40%;margin:auto">
+        <p>
+            Từ 10 vỏ chai lớn (hũ, tuýp, lọ, túi refill,...) bất kỳ của Cocoon hoặc 30 vỏ chai nhỏ (bao gồm bao bì dạng thỏi son, tinh chất chấm mụn và các sản phẩm dùng thử), bạn đổi được 1 trong các sản phẩm sau:
+        </p>
+        <ol>
+            <li>Cà Phê Đắk Lắk Làm Sạch Da Chết Cơ Thể 200ml giá 125.000đ</li>
+            <li>Cà Phê Đắk Lắk Làm Sạch Da Chết Mặt 150ml giá 165.000đ</li>
+            <li>Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml giá 165.000đ</li>
+            <li>Gel Bí Đao Rửa Mặt 140ml giá 195.000đ</li>
+            <li>Sữa Rửa Mặt Nghệ Hưng yên 140ml giá 195.000đ</li>
+            <li>Gel Rửa Mặt Hoa Hồng 140ml giá 195.000đ</li>
+            <li>Gel Rửa Mặt Cà Phê Đắk Lắk 140ml giá 195.000đ</li>
+            <li>Đường Thốt Nốt Làm Sạch Da Chết Cơ Thể 200ml giá 165.000đ</li>
+            <li>Nước Nghệ Hưng Yên 140ml giá 195.000đ</li>
+            <li>Nước Bí Đao Cân Bằng Da 140ml giá 195.000đ</li>
+            <li>Nước Sen Hậu Giang 140ml giá 195.000đ</li>
+            <li>Nước Dưỡng Da Đầu Bồ Kết 140ml giá 185.000đ</li>
+            <li>Sữa Rửa Mặt Sen Hậu Giang 140ml giá 195.000đ</li>
+        </ol>
+        <h3>Vỏ chai của nó cụ thể bao gồm:</h3>
+        <ul>
+            <li>Sữa Chống Nắng Bí Đao 5ml</li>
+            <li>Cà Phê Đắk Lắk Làm Sạch Môi 5g</li>
+            <li>Son Dưỡng Dầu Dừa Bến Tre 5g</li>
+            <li>Dung Dịch Chấm Mụn Bí Đao 5ml</li>
+            <li>Tinh Chất Nghệ Hưng Yên C10 5ml</li>
+            <li>Tinh Chất Nghệ Hưng Yên C22 5ml</li>
+            <li>Nước Tẩy Trang Bí Đao 50ml</li>
+            <li>Sữa Rửa Mặt Sen Hậu Giang 50ml</li>
+            <li>Gel Bí Đao Rửa Mặt 50ml</li>
+            <li>Nước Sen Hậu Giang 50ml</li>
+            <li>Dầu Gội Bưởi 50ml</li>
+            <li>Gel Tắm Đường Thốt Nốt An Giang 50ml</li>
+            <li>Túi refill Cà phê Đắk Lắk/Đường Thốt Nốt An Giang Làm Sạch Da Chết Cơ Thể 200ml</li>
+        </ul>
+        <h3>(Tất cả các sản phẩm còn lại được tính là vỏ chai lớn)</h3>
+
+        <img style="width:100%;margin:auto" src="Images/doichai.png" />
+    </div>
+</body>
+</html>
