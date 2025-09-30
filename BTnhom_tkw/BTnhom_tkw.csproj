@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\danhmucsanpham.css" />
     <Content Include="css\sanpham.css" />
     <Content Include="css\menu_button.css" />
     <Content Include="css\phan1.css" />
