@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link rel="stylesheet" href="../css/phan1.css" />
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <!--Phần này cấm đụng không thôi lỗi-->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+    <!-- Thanh tiêu đề -->
+    <div class="header">
+        <!-- MENU -->
+        <!--Menu button-->
+        <button class="menu_button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="sidebar" id="sidebar">
+            <button class="close_button" onclick="toggleMenu()">×</button>
+            <a href="../trangchu.html">Trang chủ</a>
+            <a href="../sanpham.html">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Tìm kiếm -->
+        <input type="checkbox" id="search-toggle">
+        <label for="search-toggle"><i class="fa fa-search"></i></label>
+        <div class="search-box">
+            <input type="search" placeholder="Tìm kiếm...">
+        </div>
+
+        <!-- Giỏ hàng -->
+        <a href="#" class="cart">&#128722;</a>
+    </div>
+    <div>
+        <img width="100%" src="../Images/anhnen-1.png" />
+    </div>
+
+
+    <!-- Khối sản phẩm chính -->
+    <div class="container">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="product-image">
+            <img src="../images/sanpham_13.png" alt="Cocoon">
+        </div>
+
+        <!-- Nội dung sản phẩm -->
+        <div class="product-details">
+            <h1>Chất Nghệ Hưng Yên C22 30ml</h1>
+            <div class="price">
+                <del>500.000 ₫</del>
+                <p class="new">457.000 ₫</p>
+            </div>
+            <div class="description">
+                Sáng da và mờ vết thâm.
+            </div>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khối mô tả dài xuống -->
+    <div class="info-box">
+        <h2>Thông số sản phẩm</h2>
+        <table>
+            <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+            <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+            <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+            <tr><td>Loại da</td><td>Da thường/Mọi loại da</td></tr>
+            <tr><td>Dung Tích</td><td>30ml</td></tr>
+        </table>
+    </div>
+
+    <div class="info-box">
+        <h2>Hướng dẫn sử dụng</h2>
+        <ul>
+            <li>Sau bước toner lấy 4-6 giọt tinh chất vào lòng bàn tay, xoa đều và mát-xa lên da mặt sạch, tránh vùng mắt.</li>
+            <li>Sau đó dùng thêm kem dưỡng khoá ẩm.</li>
+            <li>Dùng 4 – 5 lần/tuần để đạt hiệu quả tốt nhất.Sử dụng sáng và tối.</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Thành phần sản phẩm</h2>
+        <p><strong>Thành phần chính:</strong></p>
+        <ul>
+            <li><b>Nghệ Hưng Yên:</b> giúp chống oxy hoá mạnh, làm sáng da, làm dịu và làm lành các tổn thương trên da.</li>
+            <li><b>22% Vitamin C dẫn xuất EAA:</b> rất bền vững, khó bị oxy hóa, tương thích nhiều loại da, giúp làm sáng da hiệu quả và an toàn.</li>
+            <li><b>1% Hexylresorcinol:</b>  có tác dụng ức chế sản sinh melanin bằng cách ức chế tyrosinase và peroxidase, đồng thời kích thích sản sinh glutathione giúp làm sáng da vượt trội.</li>
+            <li><b>4% Niacinamide và 2% NAG:</b> giúp tăng cường hàng rào bảo vệ da, phục hồi những tổn thương và làm sáng da.</li>
+        </ul>
+        <h2>Thành phần đầy đủ:</h2>
+        <p>
+            Aqua/Water, 3-O-Ethyl Ascorbic Acid, Propanediol, Niacinamide, Acetyl Glucosamine, Dimethyl Isosorbide, Hexylresorcinol, Glycerin, Betaine, Ethoxydiglycol, Butylene Glycol, Pentylene Glycol, Curcuma Longa (Turmeric) Root Extract, Ferulic Acid, Potassium Azeloyl Diglycinate, Trisodium Ethylenediamine Disuccinate, Sodium Benzoate, Potassium Sorbate.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h2>Mô tả chi tiết</h2>
+        <p>
+            Mặt Nạ Cocoon Hỗ Trợ Giảm Dầu Và Mụn Từ Bí Đao là dòng mặt nạ rửa đến từ thương hiệu mỹ phẩm thuần chay Cocoon của Việt Nam là sản phẩm thứ 4 trong bộ sản phẩm dưỡng da từ Bí Đao của Cocoon. Sản phẩm có thành phần chủ đạo là bí đao, bổ sung thêm rau má và tinh dầu tràm trà giúp kháng viêm, giảm sưng đỏ từ đó giảm mụn hiệu quả. Mặt nạ với thành phần tự nhiên, an toàn cho da mụn, da nhạy cảm.
+        </p>
+    </div>
+</body>
+</html>
