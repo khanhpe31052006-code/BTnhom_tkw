@@ -39,16 +39,17 @@
     }
 
 .price {
-    display: flex; /* cho ngang */
-    justify-content: center; /* căn giữa */
-    gap: 10px; /* khoảng cách giữa giá cũ và mới */
-    margin-top: 6px;
+    display: flex;
+    align-items: baseline; /* cho chữ thẳng hàng */
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: flex-start; /* căn trái */
 }
+
 
     .price del {
         color: #555; 
         font-size: 20px; /* nhỏ hơn */
-        align-self: center; /* căn giữa theo chiều dọc */
         margin: 0;
     }
 

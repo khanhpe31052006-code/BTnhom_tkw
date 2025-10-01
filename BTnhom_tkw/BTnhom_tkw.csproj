@@ -67,7 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\danhmucsanpham.css" />
+    <Content Include="css\chitietsanpham.css" />
     <Content Include="css\sanpham.css" />
     <Content Include="css\menu_button.css" />
     <Content Include="css\phan1.css" />
@@ -109,8 +109,12 @@
     <Content Include="sanpham.html" />
     <Content Include="sanpham\Dau-Tay-Trang-Hoa-Hong-310ml.html" />
     <Content Include="sanpham\Gel-Rua-Mat-Bi-Đao-140ml.html" />
+    <Content Include="sanpham\Gel-Rua-Mat-Ca-Phe-Dak-Lak.html" />
     <Content Include="sanpham\Gel-Rua-Mat-Hoa-Hong-140ml.html" />
+    <Content Include="sanpham\Nuoc-Can-Bang-Sen-Hau-Giang-500ml.html" />
     <Content Include="sanpham\Nuoc-Tay-Trang-Bi-Dao-500ml.html" />
+    <Content Include="sanpham\Nuoc-Tay-Trang-Hoa-Hong-310ml.html" />
+    <Content Include="sanpham\Sua-Rua-Mat-Sen-Hau-Giang-140ml.html" />
     <Content Include="sanpham\Xit-Khoang-Nghe-Hung-Yen-130ml.html" />
     <Content Include="SonhXanhCungCoCoon.html" />
     <Content Include="trangchu.html" />

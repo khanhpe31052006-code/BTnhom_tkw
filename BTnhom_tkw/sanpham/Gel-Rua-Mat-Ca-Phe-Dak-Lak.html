@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link rel="stylesheet" href="../css/phan1.css" />
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <!--Phần này cấm đụng không thôi lỗi-->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+    <!-- Thanh tiêu đề -->
+    <div class="header">
+        <!-- MENU -->
+        <!--Menu button-->
+        <button class="menu_button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="sidebar" id="sidebar">
+            <button class="close_button" onclick="toggleMenu()">×</button>
+            <a href="../trangchu.html">Trang chủ</a>
+            <a href="../sanpham.html">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Tìm kiếm -->
+        <input type="checkbox" id="search-toggle">
+        <label for="search-toggle"><i class="fa fa-search"></i></label>
+        <div class="search-box">
+            <input type="search" placeholder="Tìm kiếm...">
+        </div>
+
+        <!-- Giỏ hàng -->
+        <a href="#" class="cart">&#128722;</a>
+    </div>
+    <div>
+        <img width="100%" src="../Images/anhnen-1.png" />
+    </div>
+
+
+    <!-- Khối sản phẩm chính -->
+    <div class="container">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="product-image">
+            <img src="../images/sanpham_8.png" alt="Cocoon">
+        </div>
+
+        <!-- Nội dung sản phẩm -->
+        <div class="product-details">
+            <h1>Gel Rửa Mặt Cà Phê Đắk Lắk</h1>
+            <div class="price">
+                <del>300.000 ₫</del>
+                <p class="new">290.000 ₫</p>
+            </div>
+            <div class="description">
+                Làm cho làn da mềm mại và rạng rỡ.
+            </div>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khối mô tả dài xuống -->
+    <div class="info-box">
+        <h2>Thông số sản phẩm</h2>
+        <table>
+            <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+            <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+            <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+            <tr><td>Loại da</td><td>Da nhạy cảm</td></tr>
+            <tr><td>Dung Tích</td><td>140ml</td></tr>
+        </table>
+    </div>
+
+    <div class="info-box">
+        <h2>Hướng dẫn sử dụng</h2>
+        <ul>
+            <li>Lấy một lượng vừa đủ mát-xa nhẹ nhàng trên da ướt.</li>
+            <li>Rửa sạch lại với nước.</li>
+            <li>Dùng buổi sáng và tối.</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Thành phần sản phẩm</h2>
+        <p><strong>Thành phần chính:</strong></p>
+        <ul>
+            <li>
+                <b>Dầu cà phê:</b>
+                <ul>
+                    <li>Được trích lý từ 100% bã cà phê Arabica, sự kết hợp độc đáo giữa axit palmitic và axit linoleic mang lại khả năng thẩm thấu tuyệt vời, giữ nước cho da, tăng hàng rào bảo vệ da, giúp da trở nên khỏe khoắn, mềm mại và rạng rỡ hơn.</li>
+                    <li>Trong dầu cà phê hoạt tính còn chứa Tocopherols (vitamin E tự nhiên) giúp tăng cường chống oxy hóa bằng cách tạo ra Nrf2 và giảm sản sinh các gốc tự do.</li>
+                </ul>
+            </li>
+            <li>
+                <b>Chiết xuất cà phê Đắk Lắk:</b>
+                <ul>
+                    <il>Có tác dụng chống oxy hóa cho làn da, đặc biệt hàm lượng caffeine cao trong hạt cà phê nguyên chất Đắk Lắk sẽ giúp da trở nên săn chắc, đều màu hơn.</il>
+                    <il>Mùi hương nồng nàn của chiết xuất cà phê giúp khơi dậy cảm giác tràn đầy năng lượng vào mỗi buổi sáng.</il>
+                </ul>
+            </li>
+            <li><b>Caffeine tinh khiết:</b> giúp chống oxy hoá, giúp cho da trông tươi sáng và căng bóng hơn.</li>
+            <li>
+                <b>Các axit amin (amino acid) gồm: Alanine, Arginine, Glycine, Histidine, Proline, Serine…:</b>
+                <ul>
+                    <il>Với kích thước phân tử nhỏ, có khả năng giữ nước, các axit amin dễ dàng thấm sâu, giúp duy trì độ ẩm, cải thiện kết cấu và khả năng phục hồi của da.</il>
+                    <il>Một số axit amin có khả năng chống oxy hóa, có thể kết hợp với các thành phần khác có tính năng phục hồi da trước những dấu hiệu lão hóa.</il>
+                </ul>
+            </li>
+        </ul>
+        <h2>Thành phần đầy đủ:</h2>
+        <p>Aqua/Water, Coffea Robusta Seed Extract, Sodium Cocoyl Glycinate, Sodium Cocoyl Isethionate, Cocamidopropyl Betaine, Glycerin, Peg-7 Glyceryl Cocoate, Peg-120 Methyl Glucose Triisostearate, Polyquaternium-39, Coffea Arabica Seed Oil, Caffeine, Sodium Pca, Pca, Arginine, Glycine, Alanine, Aspartic Acid, Serine, Valine, Proline, Threonine, Ethylhexylglycerin, Isoleucine, Sodium Lactate, Histidine, Phenylalanine, Hydroxypropyl Starch Phosphate, Maltodextrin, Xanthan Gum, Hydroxyethylcellulose, Polysorbate 20, Trisodium Ethylenediamine Disuccinate, Phenoxyethanol, Menthyl Lactate.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Mô tả chi tiết</h2>
+        <p>
+            Gel Rửa Mặt Cocoon Cà Phê Đắk Lắk Cho Làn Da Tươi Mới 140ml là sản phẩm sữa rửa mặt đến từ thương hiệu mỹ phẩm Cocoon của Việt Nam, với công thức dịu nhẹ không chứa sulfate, có khả năng làm sạch hiệu quả mà không gây khô da, mang lại cảm giác sảng khoái cùng một làn da tươi mới, sạch thoáng và trông tràn đầy sinh lực để bắt đầu một ngày mới.
+        </p>
+    </div>
+</body>
+</html>
