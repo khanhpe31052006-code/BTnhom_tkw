@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link rel="stylesheet" href="../css/phan1.css" />
+    <link rel="stylesheet" href="../css/danhmucsanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <!--Phần này cấm đụng không thôi lỗi-->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+    <!-- Thanh tiêu đề -->
+    <div class="header">
+        <!-- MENU -->
+        <!--Menu button-->
+        <button class="menu_button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="sidebar" id="sidebar">
+            <button class="close_button" onclick="toggleMenu()">×</button>
+            <a href="../trangchu.html">Trang chủ</a>
+            <a href="../sanpham.html">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Tìm kiếm -->
+        <input type="checkbox" id="search-toggle">
+        <label for="search-toggle"><i class="fa fa-search"></i></label>
+        <div class="search-box">
+            <input type="search" placeholder="Tìm kiếm...">
+        </div>
+
+        <!-- Giỏ hàng -->
+        <a href="#" class="cart">&#128722;</a>
+    </div>
+    <div>
+        <img width="100%" src="../Images/anhnen-1.png" />
+    </div>
+
+
+    <!-- Khối sản phẩm chính -->
+    <div class="container">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="product-image">
+            <img src="../images/sanpham_5.png" alt="Cocoon">
+        </div>
+
+        <!-- Nội dung sản phẩm -->
+        <div class="product-details">
+            <h1>Dầu Tẩy Trang Cocoon Chiết Xuất Hoa Hồng 310ml</h1>
+            <div class="price">260.000 đ</div>
+            <div class="description">
+                Làm sạch trang điểm nhẹ nhàng.
+            </div>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khối mô tả dài xuống -->
+    <div class="info-box">
+        <h2>Thông số sản phẩm</h2>
+        <table>
+            <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+            <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+            <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+            <tr><td>Loại da</td><td>Da thường/Mọi loại da</td></tr>
+            <tr><td>Dung Tích</td><td>310ml</td></tr>
+        </table>
+    </div>
+
+    <div class="info-box">
+        <h2>Hướng dẫn sử dụng</h2>
+        <ul>
+            <li>Dùng tay khô thoa sản phẩm lên da và mát-xa nhẹ nhàng để dầu hòa tan những bụi bẩn và lớp trang điểm trên bề mặt da. </li>
+            <li>Rửa sạch lại với nước.</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Thành phần sản phẩm</h2>
+        <p><strong>Thành phần chính:</strong></p>
+        <ul>
+            <li><b>Dầu hoa hồng Damask:</b> giúp da săn chắc, ngăn ngừa lão hóa, cấp ẩm sâu cho làn da..</li>
+            <li><b>Vitamin E:</b> C giúp dưỡng ẩm, làm mềm da và chống oxy hóa cho làn da.</li>
+        </ul>
+        <h2>Thành phần đầy đủ:</h2>
+        <p>Glycerin, Aqua/Water, Peg-7 Glyceryl Cocoate, C15-19 Alkane, Glycereth-26, Polysorbate 20, Rosa Damascena Flower Oil, Tocopheryl Acetate, Caramel.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Mô tả chi tiết</h2>
+        <p>
+            Dầu Tẩy Trang Cocoon Chiết Xuất Hoa Hồng là dòng dầu tẩy trang từ thương hiệu mỹ phẩm thuần chay Cocoon của Việt Nam, với công thức dầu hoa hồng Damask và vitamin E chọn lọc giúp làm sạch sâu mọi lớp trang điểm, bụi bẩn và dầu thừa, duy trì độ ẩm trên da mà không để lại cảm giác nhờn rít khó chịu.
+        </p>
+    </div>
+</body>
+</html>
