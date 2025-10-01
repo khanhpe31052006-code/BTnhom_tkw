@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link rel="stylesheet" href="../css/phan1.css" />
+    <link rel="stylesheet" href="../css/danhmucsanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <!--Phần này cấm đụng không thôi lỗi-->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+    <!-- Thanh tiêu đề -->
+    <div class="header">
+        <!-- MENU -->
+        <!--Menu button-->
+        <button class="menu_button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="sidebar" id="sidebar">
+            <button class="close_button" onclick="toggleMenu()">×</button>
+            <a href="../trangchu.html">Trang chủ</a>
+            <a href="../sanpham.html">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Tìm kiếm -->
+        <input type="checkbox" id="search-toggle">
+        <label for="search-toggle"><i class="fa fa-search"></i></label>
+        <div class="search-box">
+            <input type="search" placeholder="Tìm kiếm...">
+        </div>
+
+        <!-- Giỏ hàng -->
+        <a href="#" class="cart">&#128722;</a>
+    </div>
+    <div>
+        <img width="100%" src="../Images/anhnen-1.png" />
+    </div>
+
+
+    <!-- Khối sản phẩm chính -->
+    <div class="container">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="product-image">
+            <img src="../images/sanpham_2.png" alt="Cocoon">
+        </div>
+
+        <!-- Nội dung sản phẩm -->
+        <div class="product-details">
+            <h1>Gel Rửa Mặt Bí Đao 140ml</h1>
+            <div class="price">172.800 đ</div>
+            <div class="description">
+                Làm sạch bụi bẩn, giảm dầu thừa, dịu da.
+            </div>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khối mô tả dài xuống -->
+    <div class="info-box">
+        <h2>Thông số sản phẩm</h2>
+        <table>
+            <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+            <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+            <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+            <tr><td>Loại da</td><td>Da dầu/Hỗn hợp dầu</td></tr>
+            <tr><td>Dung Tích</td><td>140ml</td></tr>
+        </table>
+    </div>
+
+    <div class="info-box">
+        <h2>Hướng dẫn sử dụng</h2>
+        <ul>
+            <li>Lấy một lượng vừa đủ mát-xa nhẹ nhàng trên da ướt.</li>
+            <li>Rửa sạch lại với nước.</li>
+            <li>Dùng buổi sáng và tối.</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Thành phần sản phẩm</h2>
+        <p><strong>Thành phần chính:</strong></p>
+        <ul>
+            <li><b>Tinh chất bí đao:</b> có tác dụng trong việc diệt khuẩn, kháng viêm, hỗ trợ trị mụn rất tốt</li>
+            <li><b>Tinh chất rau má:</b> Các hợp chất sinh học có trong rau má như axit axetic, asiaticoside, acid madecassic và madecassoside giúp hỗ trợ tăng sinh collagen cho da cũng như có tác dụng tốt trong việc kháng viêm, làm dịu các vết đỏ và chống kích ứng.</li>
+            <li><b>Tinh chất tràm trà:</b> tràm trà được xem là thành phần huyền thoại trong làng trị mụn bởi khả năng kháng khuẩn, kháng viêm  xuất sắc, và hỗ trợ điều trị mụn không kém những hoạt chất hóa học như benzoyl peroxide</li>
+            <li><b>Niacinamide (vitamin B3):</b> như đã biết niacinamide là thành phần quan trọng trong việc thu nhỏ lỗ chân lông, điều tiết bã nhờn, hỗ trợ điều trị mụn.</li>
+            <li><b>Betaine và Vitamin B5 (D-panthenol):</b> giúp giữ ẩm cho làn da, tránh tình trạng mất nước trên da.</li>
+            <li><b>Salicylic Acid:</b> hay còn được gọi là BHA giúp tẩy tế bào chết, điều tiết bã nhờn, là thành phần hữu hiệu trong việc điều trị mụn ẩn.</li>
+        </ul>
+        <h2>Thành phần đầy đủ:</h2>
+        <p>Water/Aqua, Potassium Laureth Phosphate, Cocamidopropyl Betaine, Acrylates/Steareth-20 Methacrylate Copolymer, Sodium Cocoyl Glycinate, Cocoyl Methyl Glucamide, PEG-7-Glyceryl Cocoate, Glycerin, Benincasa Cerifera (Bí đao) Fruit Extract, Salicylic Acid, Niacinamide (Vitamin B3), Panthenol (Vitamin B5), Centella Asiatica Extract (Rau má), Betaine, Propanediol, Butylene Glycol, PEG-120 Methyl Glucose Dioleate, Molasses, Glycereth-26, Sodium Lactate, Sodium Hydroxide, Polysorbate 20, Melaleuca Alternifolia (Tràm trà) Leaf Oil, Rosmarinus Officinalis (Hương thảo) Leaf Oil, Lavandula Angustifolia (Oải hương) Flower Oil, Allantoin, Ethylhexylglycerin, Phenoxyethanol, Xanthan gum, Menthyl Lactate, Sodium Phytate, Alcohol (0.01% - là dung môi trong hoạt chất càng hóa nước cứng, bắt các icon kim loại, bảo vệ sản phầm khỏi tác nhân oxi hóa).</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Mô tả chi tiết</h2>
+        <p>
+            Gel Rửa Mặt Cocoon Bí Đao Giúp Giảm Dầu & Mụn là sản phẩm sữa rửa mặt đến từ thương hiệu mỹ phẩm Cocoon của Việt Nam, được chiết xuất từ thành phần tự nhiên phù hợp với làn da dầu mụn như bí đao, rau má, tràm trà... Sản phẩm có kết cấu dạng gel dịu nhẹ, trong mát được làm từ các thành phần thuần chay bí đao, rau má và tràm trà bổ sung thêm Vitamin B3, B5, Betaine, kết hợp với chất hoạt động bề mặt dịu nhẹ không chứa Sodium Lauryl Sulfate an toàn cho làn da. Độ pH 5.5 cân bằng lý tưởng, an toàn cho làn da dầu, mụn và nhạy cảm.
+        </p>
+    </div>
+</body>
+</html>

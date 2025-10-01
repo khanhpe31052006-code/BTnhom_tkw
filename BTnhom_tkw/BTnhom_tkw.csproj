@@ -107,6 +107,9 @@
     <Content Include="images\sanpham_8.png" />
     <Content Include="images\sanpham_9.png" />
     <Content Include="sanpham.html" />
+    <Content Include="sanpham\Gel-Rua-Mat-Bi-Đao-140ml.html" />
+    <Content Include="sanpham\Gel-Rua-Mat-Hoa-Hong-140ml.html" />
+    <Content Include="sanpham\Nuoc-Tay-Trang-Bi-Dao-500ml.html" />
     <Content Include="sanpham\Xit-Khoang-Nghe-Hung-Yen-130ml.html" />
     <Content Include="SonhXanhCungCoCoon.html" />
     <Content Include="trangchu.html" />
