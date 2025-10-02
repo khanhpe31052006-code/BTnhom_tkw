@@ -118,8 +118,12 @@
     <Content Include="sanpham\Nuoc-Tay-Trang-Bi-Dao-500ml.html" />
     <Content Include="sanpham\Nuoc-Tay-Trang-Hoa-Hong-310ml.html" />
     <Content Include="sanpham\Nuoc-Can-Bang-Nghe-Hung-Yen-310ml.html" />
+    <Content Include="sanpham\Sap-Duong-Am-Da-Nang-Sen-Hau-Giang-30ml.html" />
     <Content Include="sanpham\Sua-Rua-Mat-Sen-Hau-Giang-140ml.html" />
+    <Content Include="sanpham\Thach-Hoa-Hong-Duong-Am-100ml.html" />
+    <Content Include="sanpham\Thach-Nghe-Hung-Yen-100ml.html" />
     <Content Include="sanpham\Tinh-Chat-Bi-Dao-70ml.html" />
+    <Content Include="sanpham\Tinh-Chat-Bi-Dao-N7-70ml.html" />
     <Content Include="sanpham\Tinh-Chat-Hoa-Hong-30ml.html" />
     <Content Include="sanpham\Xit-Khoang-Nghe-Hung-Yen-130ml.html" />
     <Content Include="SonhXanhCungCoCoon.html" />

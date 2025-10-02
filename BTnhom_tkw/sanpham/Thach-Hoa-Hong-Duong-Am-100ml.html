@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link rel="stylesheet" href="../css/phan1.css" />
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <!--Phần này cấm đụng không thôi lỗi-->
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+    <!-- Thanh tiêu đề -->
+    <div class="header">
+        <!-- MENU -->
+        <!--Menu button-->
+        <button class="menu_button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="sidebar" id="sidebar">
+            <button class="close_button" onclick="toggleMenu()">×</button>
+            <a href="../trangchu.html">Trang chủ</a>
+            <a href="../sanpham.html">Sản phẩm</a>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Liên hệ</a>
+        </div>
+
+        <!-- Tìm kiếm -->
+        <input type="checkbox" id="search-toggle">
+        <label for="search-toggle"><i class="fa fa-search"></i></label>
+        <div class="search-box">
+            <input type="search" placeholder="Tìm kiếm...">
+        </div>
+
+        <!-- Giỏ hàng -->
+        <a href="#" class="cart">&#128722;</a>
+    </div>
+    <div>
+        <img width="100%" src="../Images/anhnen-1.png" />
+    </div>
+
+
+    <!-- Khối sản phẩm chính -->
+    <div class="container">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="product-image">
+            <img src="../images/sanpham_19.png" alt="Cocoon">
+        </div>
+
+        <!-- Nội dung sản phẩm -->
+        <div class="product-details">
+            <h1>Thạch hoa hồng dưỡng ẩm 100ml</h1>
+            <div class="price">
+                <del>400.000 ₫</del>
+                <p class="new">378.000 ₫</p>
+            </div>
+            <div class="description">
+                Da sáng rạng rỡ và mịn màng.
+            </div>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-cart">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khối mô tả dài xuống -->
+    <div class="info-box">
+        <h2>Thông số sản phẩm</h2>
+        <table>
+            <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+            <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+            <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+            <tr><td>Loại da</td><td>Da khô/Da hỗn hợp thiên khô/Da thường</td></tr>
+            <tr><td>Dung Tích</td><td>100ml</td></tr>
+        </table>
+    </div>
+
+    <div class="info-box">
+        <h2>Hướng dẫn sử dụng</h2>
+        <ul>
+            <li>Thoa đều một lượng vừa đủ lên da mặt. Dùng 2 lần mỗi ngày, sáng và tối để đạt hiệu quả tốt nhất.</li>
+        </ul>
+        <p><b>Lưu ý:</b> Tránh dùng vùng mắt, chỉ dùng ngoài da</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Thành phần sản phẩm</h2>
+        <p><strong>Thành phần chính:</strong></p>
+        <ul>
+            <li><b>Nước cất hoa hồng hữu cơ (organic rose hydrosol):</b>Nước hoa hồng có tính năng làm se, làm mềm và chống oxy hóa cho làn da.</li>
+            <li><b>Pentavitin (có INCI name là: Saccharide Isomerate):</b> Là một phức hợp carbonhydrate có nguồn gốc 100% từ thực vật và dễ dàng tương hợp với cấu trúc của làn da. Hoạt chất này có khả năng giữ nước và kết nối hoàn hảo với tầng da như một nam châm, giúp dưỡng ẩm sâu cho da lên đến 72H mà không dễ bị rửa trôi bởi nước. Ngoài ra, pentavitin còn tăng cường hàng rào bảo vệ tự nhiên của da và ngăn ngừa tình trạng mất nước tự nhiên.</li>
+            <li><b>Axit Amin (amino acid):</b> Như: Alanine, Arginine, Glycine, Histidine, Proline, Serine… chúng là một nhóm chất có kích thước phân tử nhỏ, có khả năng giữ nước, dễ dàng thấm sâu, giúp duy trì độ ẩm, cải thiện kết cấu và khả năng phục hồi của da. Một số axit amin có khả năng chống oxy hóa, có thể kết hợp với các thành phần khác có tính năng phục hồi da để chống lại những dấu hiệu lão hóa.màng.</li>
+            <li><b>HA (Hyaluronic acid):</b> Có khả năng ngậm nước gấp 1.000 lần khối lượng phân tử của nó. Vì thế HA giúp giữ ẩm cho da rất hiệu quả, làm mờ nếp nhăn và chống lão hóa da.</li>
+        </ul>
+        <h2>Thành phần đầy đủ:</h2>
+        <p>
+            AQUA/WATER, ROSA DAMASCENA FLOWER WATER, DICAPRYLYL CARBONATE, HYDROXYETHYL AC RYLATE/SODIUM ACRYLOYLDIMETHYL TAURATE COPOLYMER, BETAINE, OLUS OIL, OLEYL ERUCATE, COCO-CAPRYLATE/CAPRATE, CAPRYLIC/CAPRIC TRIGLYCERIDE, PROPANEDIOL, GLYC ERIN, SODIUM HYALURONATE, PANTHENOL, BISABOLOL, ALANINE, ARGININE, GLYCINE, HISTIDINE, PROLINE, SERINE, ISOLEUCINE, THREONINE, PHENYLALANINE, VALINE, PCA, SODIUM PCA, ASPAR TIC ACID, ARGANIA SPINOSA KERNEL OIL, XYLITOL, ALLANTOIN, TOCOPHEROL, ANHYDROXYLITOL, BUTYLENE GLYCOL, SACCHARIDE ISOMERATE, XYLITYLGLUCOSIDE, SODIUM LACTATE, BIS-PEG-18 METHYL ETHER DIMETHYL SILANE, ETHYLHEXYLGLYCERIN, XANTHAN GUM, CARAMEL, TRISODIUM ETHYLENEDIAMINE DISUCCINATE, PHENOXYETHANOL, FARNESOL, LACTIC ACID
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h2>Mô tả chi tiết</h2>
+        <p>
+
+            Hoa hồng vốn đã là một loài hoa tuyệt sắc mà bất cứ ai cũng phải trầm trồ khi chiêm ngưỡng, và những đóa hồng Damask được chúng tôi khai phá tại vùng đất Cao Bằng lại ẩn chứa sự tuyệt diệu hơn thế.Nơi cao nguyên đầy đá vôi xen lẫn núi đất, khí hậu mát mẻ quanh năm này đã gìn giữ một vườn hồng nguyên sơ có độ tuổi trên 5 năm được nuôi trồng theo phương pháp canh tác hữu cơ.Chúng sở hữu vẻ đẹp hoang dại nhưng đầy kiêu kỳ cùng hương thơm quyến rũ,đồng thời lại rất giàu nhóm chất tannin mang lại hiệu quả làm se trên da cùng nhiều dưỡng chất khác có khả năng dưỡng ẩm sâu và phục hồi cho làn da.
+        </p>
+    </div>
+</body>
+</html>
