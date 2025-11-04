@@ -40,7 +40,6 @@ body {
 /* Bố cục 40/60 */
 .layout {
     display: flex;
-    justify-content: center;
     width: 100%;
     align-items: stretch; /* 2 cột cao bằng nhau */
     margin: auto;
