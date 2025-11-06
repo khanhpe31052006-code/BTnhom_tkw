@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet" />
+</head>
+<body class="bg-light">
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="trangchu.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="khuyenmai.html">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+                </ul>
+                <form class="d-flex me-2">
+                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
+                </form>
+                <a class="btn btn-sm btn-light" href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container my-5">
+            <h2 class="text-center mb-4 fw-bold">Giỏ hàng</h2>
+            <!-- Khi giỏ hàng trống -->
+            <div id="empty-cart" class="d-flex flex-column justify-content-center align-items-center text-center">
+                <p class="fs-4 fw-semibold text-secondary mb-2">OOPSS..</p>
+                <p class="text-muted mb-4">
+                    Giỏ hàng hiện đang trống<br>
+                    Không có sản phẩm nào trong giỏ của bạn
+                </p>
+                <a href="sanpham.html" class="btn btn-dark px-4 py-2">TIẾP TỤC MUA SẮM</a>
+            </div>
+
+            <!-- Khi giỏ hàng có sản phẩm -->
+            <div id="cart-items" class="d-none">
+                <div id="cart-list" class="list-group mb-3">
+                    <!-- san phẩm được thêm ở đây -->
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0 fs-5"><strong>Tạm tính:</strong></p>
+                    <p class="mb-0 fs-5"><span id="subtotal">0</span> đ</p>
+                </div>
+
+                <div class="text-end">
+                    <button class="btn btn-primary px-4 py-2">THANH TOÁN</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
+    <!-- Script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../trangchu.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../khuyenmai.html">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../lienhe.html">Liên hệ</a></li>
+                </ul>
+                <form class="d-flex me-2">
+                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
+                </form>
+                <a class="btn btn-sm btn-light" href="../giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Khối sản phẩm chính -->
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="../images/tay-da-chat-ca-phe-dak-lak-5g.jpg" alt="Cà phê Đắk Lắk làm sạch da chết môi 5g">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Cà phê Đắk Lắk làm sạch da chết môi 5g</h1>
+                <div class="price">
+                    <del>74.000 ₫</del>
+                    <p class="new">59.500 ₫</p>
+                </div>
+                <div class="description">
+                    <b>Làm sạch da chết và làm mềm môi</b><br>
+                    Chúng tôi tự hào khi mang những hạt cà phê Đắk Lắk được rang xay bằng tay vào sản phẩm chăm sóc môi đặc biệt này, những hạt cà phê li ti hòa quyện vào dầu mắc-ca và bơ hạt mỡ sẽ nhẹ nhàng làm bong những tế bào da chết ở môi, đem lại làn môi mềm và mịn màng.
+                </div>
+                <div class="buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Gel tắm đường thốt nốt An Giang 500mlCà phê Đắk Lắk làm sạch da chết môi 5g', 74000 , '../images/tay-da-chat-ca-phe-dak-lak-5g.jpg')">
+                        <!-- cấu trúc:'tên sản phẩm',giá,'img' -->
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Da môi</td></tr>
+                <tr><td>Dung Tích</td><td>5g</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Công dụng</h2>
+            <p>
+                Làm bong những tế bào chết ở môi
+                Mang lại làn môi ẩm mềm và mịn màng
+            </p>
+
+        </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <p>Làm ẩm môi. Thoa sản phẩm trực tiếp lên môi bằng chuyển động trượt qua lại trong 30 giây, lớp tế bào chết sẽ nhẹ nhàng bong ra. Lau đi bằng khăn giấy hoặc khăn ấm. Sử dụng 3-4 lần một tuần để đạt kết quả tốt nhất. </p>
+        </div>
+
+        <div class="info-box">
+            <h2>Đặc điểm</h2>
+            <table>
+                <tr><td>Lượng dùng</td><td>Một lượng vừa đủ </td></tr>
+                <tr><td>Kết cấu</td><td>Dạng thỏi son có nhiều hạt cà phê xay rất mịn.</td></tr>
+                <tr><td>Mùi hương</td><td>Mùi thơm đặc trưng của cà phê Đắk Lắk</td></tr>
+                <tr><td>Lưu ý</td><td>Tránh dùng vùng mắt, chỉ dùng ngoài da</td></tr>
+                <tr><td>Xuất xứ</td><td>Việt Nam</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Cà phê Đăk Lăk được rang xay bằng tay:</b> Cà phê có tác dụng cao trong việc chống oxi hóa, đặc biệt cafein trong hạt cà phê sẽ giúp da môi hồng hào, mang lại làn môi mềm mịn.</li>
+                <li><b>Bơ hạt mỡ:</b> Có nguồn gốc từ cây Karite, rất giàu Vitamin A,E và F làm ẩm mềm đôi môi.</li>
+                <li><b>Dầu mắc-ca:</b> Có chứa 60% oleic acid (omega 9) có tác dụng dưỡng ẩm, chống nhăn, làm dịu các tổn thương. Ngoài ra, dầu mắc - ca còn chứa squalene, vitamin E có tác dụng dưỡng ẩm và chống oxy hóa.</li>
+            </ul>
+            <h2>Thành phần chi tiết</h2>
+            <p>BUTYROSPERMUM PARKII BUTTER, MACADAMIA INTEGRIFOLIA SEED OIL, COFFEA ARABICA SEED POWDER, CARTHAMUS TINCTORIUS SEED OIL, SYNTHETIC WAX, C10-18 TRIGLYCERIDES, TOCO-PHERYL ACETATE, MENTHYL LACTATE</p>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
+    <script src="../js/add_cart.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

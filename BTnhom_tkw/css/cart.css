@@ -1,0 +1,41 @@
+﻿.remove-btn {
+    background: none;
+    color: red;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr auto auto; /* 3 cột: thông tin - số lượng - giá */
+    align-items: center;
+    gap: 20px;
+    padding: 12px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+    .cart-item img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+
+    .cart-item .item-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cart-item .quantity-control {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cart-item .text-end {
+        text-align: right;
+        min-width: 120px; 
+    }

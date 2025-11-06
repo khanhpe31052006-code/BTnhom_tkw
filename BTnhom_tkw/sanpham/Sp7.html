@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../trangchu.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../khuyenmai.html">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../lienhe.html">Liên hệ</a></li>
+                </ul>
+                <form class="d-flex me-2">
+                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
+                </form>
+                <a class="btn btn-sm btn-light" href="../giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Khối sản phẩm chính -->
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="../images/Gel-tam-khuynh-diep.jpg" alt="Gel tắm khuynh diệp & bạc hà 500ml">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Cà phê Đắk Lắk làm sạch da chết môi 5g</h1>
+                <div class="price">
+                    <del>241.000 ₫</del>
+                    <p class="new">199.500 ₫</p>
+                </div>
+                <div class="description">
+                    <b>Làm sạch và giải tỏa căng thẳng</b><br>
+                    Vận dụng liệu pháp mùi hương từ tinh dầu khuynh diệp, bạc hà, kết hợp với vitamin B5 và hoạt chất dưỡng ẩm Betaine, Gel tắm sẽ làm sạch nhẹ nhàng và giữ cho làn da cơ thể luôn mềm mại, đồng thời giúp thư giãn, giải tỏa căng thẳng và mang lại một tinh thần thông suốt.
+                </div>
+                <div class="buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Cà phê Đắk Lắk làm sạch da chết môi 5g', 241000 , '../images/Gel-tam-khuynh-diep.jpg')">
+                        <!-- cấu trúc:'tên sản phẩm',giá,'img' -->
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Mọi loại da</td></tr>
+                <tr><td>Dung Tích</td><td>5g</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Công dụng</h2>
+            <p>
+                Làm sạch nhẹ nhàng da toàn thân, mang lại làn da mềm mịn, tươi mới
+                Liệu pháp mùi hương giúp thư giãn, thoải mái, giải tỏa căng thẳng
+                Mang lại một tinh thần thông suốt
+            </p>
+
+        </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <p>Lấy sản phẩm vào lòng bàn tay hoặc miếng bọt biển. Mát-xa nhẹ nhàng trên da ướt để tạo bọt. Tắm sạch lại với nước. </p>
+        </div>
+
+        <div class="info-box">
+            <h2>Đặc điểm</h2>
+            <table>
+                <tr><td>Lượng dùng</td><td>Từ 1-2 lần nhấn</td></tr>
+                <tr><td>Kết cấu</td><td>Gel trong suốt không màu</td></tr>
+                <tr><td>Mùi hương</td><td>Mùi tinh dầu khuynh diệp và bạc hà thư giãn</td></tr>
+                <tr><td>Lưu ý</td><td>Tránh dùng vùng mắt, chỉ dùng ngoài da</td></tr>
+                <tr><td>Xuất xứ</td><td>Việt Nam</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Tinh dầu khuynh diệp:</b> Có khả năng kháng khuẩn, chống viêm, bảo vệ khỏi nhiễm trùng, hương thơm nồng ấm, mang lại sự khoan thai, thoải mái cho tinh thần./li>
+                <li><b>Tinh dầu bạc hà:</b> Giúp khử mùi, kháng khuẩn, chống virus, chống oxy hóa và mang đến cảm giác mát lạnh, sảng khoái.</li>
+                <li><b>Vitamin B5 (panthenol):</b> Có tác dụng dưỡng ẩm, kháng viêm và làm dịu làn da dễ bị kích ứng và da nhạy cảm.</li>
+                <li><b>Betaine</b>Là hoạt chất dưỡng ẩm được chiết xuất từ củ cải đường, có tác dụng bảo vệ tế bào da khỏi căng thẳng từ môi trường bên ngoài như bức xạ UV, ô nhiễm môi trường và tăng khả năng giữ ẩm cho da dưới tác động của nhiệt độ và khói bụi.</li>
+            </ul>
+            <h2>Thành phần chi tiết</h2>
+            <p>Aqua/Water, Cocamidopropyl Betaine, Sodium Laureth Sulfate, Lauric Acid, Glycerin, Myristic Acid, PEG-7 Glyceryl Cocoate, Cocamide MEA, Stearic Acid, Panthenol, Betaine, PEG-45M, PEG-120 Methyl Glucose Dioleate, Trisodium Ethylenediamine Disuccinate, Eucalyptus Globulus Leaf Oil, Mentha Piperita Oil, Limonene, Pelargonium Graveolens Flower Oil, Parfum, Ethylhexylglycerin, Phenoxyethanol.</p>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
+    <script src="../js/add_cart.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container-km {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Cột trái */
+.trai {
+    flex: 4;
+}
+.trai img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.trai h2 {
+    margin: 10px 0;
+    color: #6A4E3C;
+}
+.trai p {
+    color: #555;
+}
+
+/* Cột phải */
+.phai {
+    flex: 6;
+}
+.phai h2 {
+    margin-bottom: 15px;
+    color: #6A4E3C;
+}
+
+/* Danh sách sản phẩm */
+.sanphamlist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 16px;
+}
+
+/* Sản phẩm */
+.sanpham-item {
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    border: 1px solid #eee;
+    transition: 0.25s;
+}
+
+/* Hover */
+.sanpham-item:hover {
+    transform: translateY(-5px);
+    border-color: #6A4E3C;
+}
+
+/* Box ảnh vuông */
+.img-box {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #fafafa;
+}
+.img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ảnh đầy khung không méo */
+    display: block;
+}
+
+/* Nhãn giảm giá */
+.giamgia {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #c62828;
+    color: #fff;
+    font-size: 13px;
+    padding: 4px 6px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Tiêu đề sản phẩm */
+.sanpham-item h3 {
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.3;
+}
+
+/* Giá */
+.gia {
+    font-size: 13px;
+}
+.giacu {
+    text-decoration: line-through;
+    color: #888;
+}
+.giamoi {
+    color: #c62828;
+    font-weight: bold;
+}
+/* Tablet - MacBook nhỏ */
+@media (max-width: 1024px) {
+    .sanphamlist {
+        grid-template-columns: repeat(2, 1fr); /* 2 sp/hàng */
+    }
+}
+
+/* Điện thoại */
+@media (max-width: 780px) {
+    .sanphamlist {
+        grid-template-columns: repeat(1, 1fr); /* 1 sp/hàng */
+    }
+}

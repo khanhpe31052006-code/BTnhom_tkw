@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/chitietsanpham.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../trangchu.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../khuyenmai.html">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../lienhe.html">Liên hệ</a></li>
+                </ul>
+                <form class="d-flex me-2">
+                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
+                </form>
+                <a class="btn btn-sm btn-light" href="../giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Khối sản phẩm chính -->
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="../images/Nuoc_duong_da_dau_bo_ket_140ml.jpg" alt="Gel rửa mặt Cocoon">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Nước dưỡng da đầu bồ kết 140ml</h1>
+                <div class="price">
+                    <del>182.000 ₫</del>
+                    <p class="new">149.000 ₫</p>
+                </div>
+                <div class="description">
+                    <b>Giảm gàu & Chăm sóc da dầu nhạy cảm</b><br>
+                    Da đầu khoẻ mạnh là nền tảng cho một mái tóc chắc khoẻ. Vận dụng sức mạnh từ quả bồ kết truyền thống kết hợp cùng hoạt chất khoa học tiên tiến, Nước Dưỡng Da Đầu Bồ Kết được thiết kế chuyên biệt cho da đầu nhạy cảm, giúp giảm gàu, cân bằng hệ vi sinh và củng cố hàng rào bảo vệ trên da đầu. Sản phẩm không gây khô và bết tóc.
+                </div>
+                <div class="buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Nước dưỡng da đầu bồ kết 140ml', 182000 , '../images/Nuoc_duong_da_dau_bo_ket_140ml.jpg')">
+                        <!-- cấu trúc:'tên sản phẩm',giá,'img' -->
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Da đầu gàu, ngứa và da đầu nhạy cảm.</td></tr>
+                <tr><td>Dung Tích</td><td>100ml</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Công dụng</h2>
+            <p>
+                Sạch gàu từ nền tảng vi sinh
+                Tăng cường hàng rào bảo vệ da đầu
+                Chăm sóc da đầu nhạy cảm
+
+            </p>
+
+        </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <p>Chia tóc thành từng phần nhỏ, xịt sản phẩm trực tiếp lên da đầu sạch, rồi massage nhẹ nhàng để dưỡng chất thẩm thấu. Thực hiện đều đặn 1-2 lần mỗi ngày để đạt kết quả tốt nhất.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Đặc điểm</h2>
+            <table>
+                <tr><td>Lượng dùng</td><td>Một lượng vừa đủ lên da đầu.</td></tr>
+                <tr>
+                    <td>Kết cấu</td>
+                    <td>
+                        Dạng nước lỏng, dễ thẩm thấu.
+                    </td>
+                </tr>
+                <tr><td>Mùi hương</td><td>Hương thơm tự nhiên dễ chịu.</td></tr>
+                <tr><td>Lưu ý</td><td>Tránh để sản phẩm tiếp xúc trực tiếp vào mắt, nếu sản phẩm dính vào mắt, rửa nhiều lần bằng nước sạch.</td></tr>
+                <tr><td>Xuất xứ</td><td>Việt Nam</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Chiết xuất bồ kết</b> Nguồn dược liệu truyền thống từ Việt Nam giàu saponin cùng các hợp chất kháng khuẩn tự nhiên, giúp làm sạch gàu, bụi bẩn, dầu thừa trên da đầu, đồng thời hạn chế tình trạng ngứa và sự phát triển của vi khuẩn có hại.</li>
+                <li><b>Chiếc xuất chanh dây:</b> Các nhóm hoạt chất polyphenol có trong quả chanh dây được tăng cường hoạt tính sinh học bằng công nghệ Laccase, giúp kiểm soát tốt tình trạng bong tróc da đầu, củng cố hàng rào bảo vệ và giảm gàu hiệu quả, phù hợp cho cả nền da đầu yếu, nhạy cảm.</li>
+                <li><b>Crinipan PMC Green:</b> Là hoạt chất có nguồn gốc 100% từ sinh học, không chỉ an toàn và thân thiện với da đầu lẫn môi trường - Crinipan PMC Green còn làm sạch gàu nhờ khai thác sự phụ thuộc của nấm Malassezia vào lipid trên da đầu để kích hoạt cơ chế tự điều chỉnh, từ đó tạo nên môi trường khỏe mạnh, ngăn gàu quay lại.</li>
+                <li><b>Fluidipure 8G: </b>Kết hợp từ công nghệ Lipoaminoacids (Capryloyl Glycine) và dẫn xuất đường (Xylitylglucoside), mang lại hiệu quả vượt trội trong việc chăm sóc và bảo vệ da đầu thông qua việc ức chế sự phát triển của vi khuẩn có hại, đồng thời cung cấp độ ẩm cho da đầu luôn mềm mại và khoẻ mạnh.</li>
+                <li><B>5α-Avocuta® T và Tocopherol:</B>Thành phần tự nhiên có nguồn gốc từ quả bơ giúp điều tiết bã nhờn bằng cách ứng chế hoạt động của 5α-reductase, kết hợp cùng chất chống oxy hóa tự nhiên - vitamin E giúp bảo vệ da đầu khỏi tác hại từ các gốc tự do bên ngoài môi trường, bổ sung dưỡng chất cho da đầu khỏe mạnh.</li>
+            </ul>
+            <h2>Thành phần chi tiết:</h2>
+            <p>Water/ Aqua, PEG-40 Hydrogenated Castor Oil, Propanediol, Glycerin, Propanediol Caprylate, Capryloyl Glycine, Gleditsia Australis Extract, Botrytis Cinerea/Passiflora Edulis Fruit Extract/Piceatannol Ferment Lysate Filtrate, Epilobium Angustifolium Flower/Leaf/Stem Extract, Butyl Avocadate, Xylitylglucoside, Anhydroxylitol, Xylitol, Olive Oil PEG-7 Esters, Hexylene Glycol, Cetylpyridinium Chloride, Tocopherol, Mentha Piperita Oil, Parfum, Trisodium Ethylenediamine Disuccinate, Hydroxyacetophenone, Citric Acid.</p>
+        </div>
+    </main>s
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
+    <script src="../js/add_cart.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

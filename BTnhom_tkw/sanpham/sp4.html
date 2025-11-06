@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../css/menu_button.css" />
+    <link href="../css/menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/chitietsanpham.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="../trangchu.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../khuyenmai.html">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../lienhe.html">Liên hệ</a></li>
+                </ul>
+                <form class="d-flex me-2">
+                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
+                </form>
+                <a class="btn btn-sm btn-light" href="../giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Khối sản phẩm chính -->
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="../images/Mat-na-nghe-hung-yen.jpg" alt="Gel rửa mặt Cocoon">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Mặt nạ nghệ Hưng Yên 100ml</h1>
+                <div class="price">
+                    <del>340.000 ₫</del>
+                    <p class="new">290.000 ₫</p>
+                </div>
+                <div class="description">
+                    <b>Da rạng rỡ và mịn màng</b><br>
+                    Mặt nạ từ tinh bột nghệ giàu Curcuminoid kết hợp với Vitamin B3 và chiết xuất yến mạch rất phù hợp cho làn da xỉn màu và có nhiều vết thâm. Sau khi rửa đi lớp mặt nạ, bạn sẽ nhìn thấy một làn da tươi mới, sáng rạng rỡ và đều màu.
+                </div>
+                <div class="buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Mặt nạ nghệ Hưng Yên 100ml', 290000 , '../images/Mat-na-nghe-hung-yen.jpg')">
+                        <!-- cấu trúc:'tên sản phẩm',giá,'img' -->
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Mọi loại da</td></tr>
+                <tr><td>Dung Tích</td><td>100ml</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Công dụng</h2>
+            <p>
+                Cải thiện bề mặt, giúp da trở nên mịn màng
+                Dưỡng sáng và bổ sung độ ẩm cần thiết cho làn da
+                Chống oxy hóa và hạn chế việc sản sinh sắc tố melanin
+                Mang lại làn da sáng hồng, đều màu và rạng rỡ
+                Mặt nạ nghệ chứa hạt óc chó xay nhuyễn có tác dụng mát-xa nhẹ nhàng trong lúc rửa giúp làm sạch da chết, mang lại làn da mịn màng, không làm vàng da sau khi sử dụng
+            </p>
+
+        </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <p>Thoa đều một lượng vừa đủ trên da sạch, tránh vùng mắt, để 20 phút rồi rửa sạch với nước. Dùng 3-4 lần một tuần để đạt hiệu quả tốt nhất. </p>
+        </div>
+
+        <div class="info-box">
+            <h2>Đặc điểm</h2>
+            <table>
+                <tr><td>Lượng dùng</td><td>Một lượng vừa đủ bằng một quả nho</td></tr>
+                <tr><td>Kết cấu</td><td>Dạng đất sét đặc màu vàng có hạt óc chó li ti.</td></tr>
+                <tr><td>Mùi hương</td><td>Mùi nghệ thoang thoảng</td></tr>
+                <tr><td>Lưu ý</td><td>Tránh dùng vùng mắt, chỉ dùng ngoài da</td></tr>
+                <tr><td>Xuất xứ</td><td>Việt Nam</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Tinh bột nghệ:</b> Tinh bột nghệ từ củ nghệ trồng ở Hưng Yên có làm lượng curcumin cao gấp 3 lần so với nghệ trồng ở các vùng khác. Curcumin là chất nổi bật trong nhóm curcuminoid giúp chống oxy hoá, bảo vệ tế bào da khỏi những gốc tự do, điều hoà việc hình thành melanin giúp da sáng khoẻ, đều màu và làm mờ vết thâm nhanh chóng.</li>
+                <li><b>Chiếc xuất yến mạch:</b> Nổi tiếng trong việc giảm kích ứng, kháng viêm mạnh mẽ và dưỡng ẩm cho làn da nhạy cảm.</li>
+                <li><b>Vitamin B3 (Niacinamide):</b> Cụ thể là Tetrahydrodiferuloylmethane có tên thương mại là Sabiwhite - được phát triển bởi tập đoàn Sabinsa (Ấn Độ). Hoạt chất này có tác dụng làm trắng da bằng cách ức chế hoạt động của enzyme tyrosinase, từ đó điều hoà quá trình sản sinh sắc tố melanin giúp cho da sáng và đều màu hơn, chống oxy hóa thông qua việc ngăn chặn quá trình tạo thành gốc tự do, kháng viêm và chống kích ứng.</li>
+                <li><b>Curcuminoid:</b> Có tác dụng dưỡng ẩm, kháng viêm và làm dịu làn da dễ bị kích ứng, da nhạy cảm.</li>
+                <li><B>Chiết xuất nghệ:</B> Chiết xuất dạng nước thu được từ dịch chiết củ nghệ có tác dụng chống oxy hoá mạnh, làm sáng da, giảm kích ứng, làm dịu và làm lành các tổn thương trên da..</li>
+            </ul>
+            <h2>Thành phần chi tiết:</h2>
+            <p>Aqua/Water, Kaolin, Silica, Curcuma Longa (Turmeric) Root Powder, Caprylic/Capric Triglyceride, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Tetrahydrodiferuloylmethane, Curcuma Longa (Turmeric) Root Extract, Niacinamide, Lactic Acid, Avena Sativa (Oat) Meal Extract, Oryza Sativa (Rice) Bran Oil, Glycerin, Glycereth-26, Phaseolus Radiatus Seed Extract, Allantoin, Propanediol, Butylene Glycol, Juglans Regia (Walnut) Shell Powder, Xanthan Gum, Pentylene Glycol, 1,2-Hexanediol, Ethylhexylglycerin, Trisodium Ethylenediamine Disuccinate, BHT, Menthyl Lactate, Phenoxyethanol, Eucalyptus Globulus Leaf Oil, Sodium Benzoate, Lavandula Angustifolia Flower Oil, Chlorphenesin, Potassium Sorbate</p>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
+    <script src="../js/add_cart.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

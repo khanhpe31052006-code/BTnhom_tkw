@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cảm ơn bạn!</title>
+<style>
+    
+        body {
+    background: #e7e0d4;
+    font-family: sans-serif;
+}
+       
+    .khung-camon {
+        width: 80%;
+        max-width: 750px;
+        background: #f7f1e5;
+        padding: 35px 45px;
+        border-radius: 10px;
+        margin: 50px auto;
+        text-align: center;
+        position: relative;
+    }
+
+    .dong-camon {
+        position: absolute;
+        top: 18px;
+        right: 25px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .text-camon {
+        font-size: 21px;
+        color: #b19054;
+        margin: 30px 0 40px;
+    }
+
+    .nut {
+        background: #231f1a;
+        color: #fff;
+        padding: 16px;
+        border: none;
+        border-radius: 6px;
+        width: 200px;
+        cursor: pointer;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .nut-home {
+        background: transparent;
+        border: 2px solid #231f1a;
+        color: #231f1a;
+    }
+</style>
+</head>
+<body>
+
+<div class="khung-camon">
+    <span class="dong-camon" onclick="dong()">×</span>
+    <h2>Liên hệ với Cocoon</h2>
+
+    <p class="text-camon">Cảm ơn bạn đã liên hệ với Cocoon!</p>
+
+    <button class="nut" onclick="dong()">ĐÓNG</button>
+    <button class="nut nut-home" onclick="veTrangChu()">Quay về trang chủ</button>
+</div>
+
+<script>
+function dong() {
+    window.history.back();
+}
+
+function veTrangChu() {
+    window.location.href = "Trangchu.html"; // Đổi link theo tên trang chủ của bạn
+}
+</script>
+
+</body>
+</html>

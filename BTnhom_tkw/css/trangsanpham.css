@@ -1,0 +1,197 @@
+﻿/* Reset cơ bản */
+body {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Thanh menu danh mục */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    max-width: 1200px;
+}
+
+    .menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .menu a:hover {
+            background-color: #2e66cc;
+            color: #fff;
+        }
+
+/* Phần mô tả */
+.discription {
+    background-color: white;
+    border: solid 1px black;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+/* Layout chính */
+.layout {
+    width: 100%;
+    background-color: white;
+}
+
+/* Phần sản phẩm */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sản phẩm trên 1 hàng */
+    gap: 25px; /* khoảng cách vừa phải giữa các ô */
+    padding: 50px 100px; 
+    box-sizing: border-box;
+    background-color: #fff;
+    justify-items: center;
+}
+
+
+/* --- Mỗi ô sản phẩm --- */
+.product-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 360px;
+}
+
+    .product-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* --- Ảnh sản phẩm --- */
+    .product-box .product-image img {
+        width: 100%;
+        height: 380px; 
+        object-fit: contain;
+        padding: 10px;
+    }   
+
+    /* --- Thông tin sản phẩm --- */
+    .product-box .product-info {
+        padding: 12px 10px;
+    }
+
+        .product-box .product-info h3 {
+            font-size: 1.2rem;
+            margin: 10px 0 6px;
+        }
+
+        .product-box .product-info p {
+            font-size: 1rem;
+        }
+/* --- Giá --- */
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+    .price del {
+        color: #888;
+        font-size: 0.9rem;
+    }
+
+    .price .new {
+        color: #d32f2f;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+/* --- Responsive --- */
+@media (max-width: 1400px) {
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px 40px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+/* Slide full màn hình */
+#bannerCarousel,
+#bannerCarousel .carousel-inner,
+#bannerCarousel .carousel-item {
+    height: 100vh !important; /* Full màn hình */
+}
+
+    #bannerCarousel .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+/* Tablet  */
+@media (max-width: 992px) {
+    #bannerCarousel,
+    #bannerCarousel .carousel-inner,
+    #bannerCarousel .carousel-item {
+        height: 75vh !important;
+    }
+
+        #bannerCarousel .carousel-item img {
+            height: 75vh;
+        }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #bannerCarousel,
+    #bannerCarousel .carousel-item {
+        height: 60vh !important;
+    }
+
+        #bannerCarousel .carousel-item img {
+            height: 60vh;
+        }
+}
+@media (max-width: 576px) {
+    #bannerCarousel .carousel-item img {
+        height: 50vh;
+    }
+}
+/* --- Mũi tên màu đen --- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,<svg fill='%23000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M11 1L4 8l7 7'/></svg>") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,<svg fill='%23000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M5 1l7 7-7 7'/></svg>") !important;
+}
+
+
+

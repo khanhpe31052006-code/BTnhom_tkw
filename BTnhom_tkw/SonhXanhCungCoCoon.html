@@ -1,104 +1,245 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="vi">
 <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cocoon – Điểm Xanh Online</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
     <style>
+        :root {
+            --brown: #4b2e1e;
+            --light: #f6f2ee;
+        }
+
         body {
-            font-size: 24px;
+            background: var(--light);
+            font-family: "Segoe UI", sans-serif;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: var(--brown);
+        }
+
+            .navbar .navbar-brand,
+            .navbar .nav-link {
+                color: #fff !important;
+            }
+
+                .navbar .nav-link:hover {
+                    color: #ffd17b !important;
+                }
+
+                .navbar .nav-link.active {
+                    font-weight: 700;
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                }
+
+        .hero {
+            background-image: url('./Images/songxanhbia.jpg');
+            background-position: center; /* canh giữa ảnh */
+            background-color: #f2f5ed; /* màu nền xanh nhạt, hợp tông Cocoon */
+            color: #3b2a1b; /* đổi màu chữ để dễ đọc hơn */
+            height: 320px; /* chiều cao khung vừa phải */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+            .hero h1 {
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            .hero p {
+                margin-top: 8px;
+            }
+
+        /* SECTION */
+        .section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        h2, h3 {
+            color: var(--brown);
+            font-weight: 700;
+        }
+
+        /* IMAGE STYLE */
+        .section img {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        /*Chỗ hình giỏ hàng ne*/
+        .btn-light {
+            background-color: #4b2e1e; /* nâu Cocoon */
+            color: #fff; /* icon màu trắng */
+            border: none;
+        }
+
+            .btn-light:hover {
+                background-color: #6b3e2a; /* nâu sáng hơn khi hover */
+                color: #fff;
+            }
+
+        /* FOOTER */
+        footer {
+            background: #7b4a31;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.6rem;
+            }
         }
     </style>
-    <link rel="stylesheet" href="css/menu_button.css" />
-    <link rel="stylesheet" href="css/phan1.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
 </head>
 <body>
-    <!--Phần này cấm đụng không thôi lỗi-->
-    <script>
-        function toggleMenu() {
-            document.getElementById("sidebar").classList.toggle("active");
-        }
-    </script>
-    <!-- Thanh tiêu đề -->
-    <div class="header">
-        <!-- MENU -->
-        <!--Menu button-->
-        <button class="menu_button" onclick="toggleMenu()">☰ Menu</button>
-        <div class="sidebar" id="sidebar">
-            <button class="close_button" onclick="toggleMenu()">×</button>
-            <a href="trangchu.html">Trang chủ</a>
-            <a href="sanpham.html">Sản phẩm</a>
-            <a href="#">Khuyến mãi</a>
-            <a href="#">Liên hệ</a>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="trangchu.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="khuyenmai.html">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
+                </ul>
+                <form class="d-flex me-2">
+                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
+                </form>
+                <a class="btn btn-sm btn-light" href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Điểm Xanh Online – Đổi vỏ chai cùng Cocoon</h1>
+        <p>Lan tỏa lối sống xanh, vì một Việt Nam thuần chay và bền vững.</p>
+    </section>
+
+    <!-- NỘI DUNG -->
+    <div class="container my-5">
+
+        <!-- PHẦN 1: GIỚI THIỆU -->
+        <div class="section">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h2>Vì sao có “Điểm Xanh Online”?</h2>
+                    <p>
+                        Cocoon không chỉ quan tâm đến vẻ đẹp tự nhiên của làn da mà còn hướng đến việc bảo vệ Mẹ Trái Đất.
+                        Chương trình “Điểm Xanh Online” ra đời để giúp mọi khách hàng, dù ở bất kỳ đâu tại Việt Nam, đều có thể tham gia đổi vỏ chai –
+                        hành động nhỏ nhưng mang ý nghĩa lớn trong việc giảm rác thải và tái chế bền vững.
+                    </p>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="./Images/anhsongxanh1.png" alt="Chương trình Điểm Xanh" class="img-fluid">
+                </div>
+            </div>
         </div>
 
-        <!-- Tìm kiếm -->
-        <input type="checkbox" id="search-toggle">
-        <label for="search-toggle"><i class="fa fa-search"></i></label>
-        <div class="search-box">
-            <input type="search" placeholder="Tìm kiếm...">
+        <!-- PHẦN 2: QUY TRÌNH -->
+        <div class="section text-center">
+            <h2>Quy trình tham gia đổi vỏ chai</h2>
+            <p class="text-muted mb-4">Thực hiện dễ dàng theo 3 bước đơn giản sau:</p>
+
+            <div class="row justify-content-center g-4">
+                <!-- Bước 1 -->
+                <div class="col-md-4">
+                    <div class="border rounded-3 p-3 h-100 bg-light">
+                        <div class="fw-bold text-white bg-success rounded-circle d-inline-block px-3 py-1 mb-2">1</div>
+                        <h5 class="fw-bold" style="color:#4b2e1e;">Đăng ký thông tin</h5>
+                        <p class="small mb-0">
+                            Truy cập <a href="FormDky.html">TẠI ĐÂY</a> và điền đầy đủ thông tin theo mẫu đăng ký.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bước 2 -->
+                <div class="col-md-4">
+                    <div class="border rounded-3 p-3 h-100 bg-light">
+                        <div class="fw-bold text-white bg-success rounded-circle d-inline-block px-3 py-1 mb-2">2</div>
+                        <h5 class="fw-bold" style="color:#4b2e1e;">Gửi vỏ chai</h5>
+                        <p class="small mb-0">
+                            Đóng gói, ghi rõ họ tên và thông tin người gửi, gửi đến:<br>
+                            Lô đất số HH, Đường số 11 &amp; Đường số 3, KCN Xuyên Á, xã Mỹ Hạnh Bắc, huyện Đức Hòa, tỉnh Long An.<br>
+                            <strong>Hotline:</strong> 1900 9300
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bước 3 -->
+                <div class="col-md-4">
+                    <div class="border rounded-3 p-3 h-100 bg-light">
+                        <div class="fw-bold text-white bg-success rounded-circle d-inline-block px-3 py-1 mb-2">3</div>
+                        <h5 class="fw-bold" style="color:#4b2e1e;">Nhận quà từ Cocoon</h5>
+                        <p class="small mb-0">
+                            Cocoon đối chiếu thông tin, xác nhận vỏ chai và gửi sản phẩm mới qua đường chuyển phát nhanh.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <img src="./Images/songxanh2.jpg" alt="Hướng dẫn đổi vỏ chai Cocoon" class="img-fluid rounded shadow-sm">
+            </div>
         </div>
 
-        <!-- Giỏ hàng -->
-        <a href="#" class="cart">&#128722;</a>
-    </div>
-    <div>
-        <img width="100%" src="Images/anhnen-1.png" />
-    </div>
-    <!--Nội dung-->
-    <img style="width:100%" src="Images/anhnen4.png" />
-    <div style="width:40%;margin:auto">
-        <p style="font-size:24px;">Tiếp tục lan tỏa các “thông điệp xanh” hướng đến Mẹ Trái Đất, nhân rộng phạm vi chương trình đổi vỏ chai cũ và đáp ứng mong mỏi của rất nhiều quý khách hàng về chương trình này, bắt đầu từ ngày 02/06/2021, Cocoon sẽ áp dụng thêm hình thức đổi vỏ chai online. Chúng tôi gọi đó là "Điểm Xanh Online". Từ đây, dù bạn ở bất cứ nơi đâu tại Việt Nam thì đều có thể tham gia đổi vỏ chai cùng Cocoon.</p>
-        <h2>Quy trình tham gia đổi vỏ chai online theo 3 bước sau:</h2>
-        <ul>
-            <li>
-                Bước 1:Truy cập <a href="FormDky.html">TẠI ĐÂY</a> và điền đầy đủ thông tin theo mẫu đăng ký
 
-            </li>
-            <li>
-                Bước 2:Đóng gói, ghi rõ họ tên, thông tin của bạn trên kiện hàng và gửi vỏ chai/hũ rỗng đến Kho Cocoon
-                theo địa chỉ: Lô đất số HH, Đường số 11 và Đường số 3, Khu công nghiệp Xuyên Á, xã Mỹ Hạnh Bắc, huyện Đức Hòa, tỉnh Long An, Việt Nam - Hotline: 1900 9300
-            </li>
-            <li>Cocoon sẽ đối chiếu các vỏ chai và thông tin trên biểu mẫu, sau đó gửi sản phẩm mới qua đường chuyển phát</li>
-        </ul>
+        <!-- PHẦN 3: QUÀ TẶNG -->
+        <div class="section">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-3 mb-lg-0 text-center">
+                    <img src="./Images/songxanh3.jpg" alt="Sản phẩm đổi thưởng" class="img-fluid">
+                </div>
+                <div class="col-lg-7">
+                    <h2>Sản phẩm đổi thưởng</h2>
+                    <p>
+                        Từ <strong>10 vỏ chai lớn</strong> hoặc <strong>30 vỏ chai nhỏ</strong>, bạn có thể đổi 1 sản phẩm trong danh sách sau:
+                    </p>
+                    <ul>
+                        <li>Gel Bí Đao Rửa Mặt 140ml – 195.000đ</li>
+                        <li>Tẩy Trang Hoa Hồng 140ml – 175.000đ</li>
+                        <li>Nước Dưỡng Da Đầu Bồ Kết 140ml – 185.000đ</li>
+                        <li>Cà Phê Đắk Lắk Làm Sạch Da Chết Cơ Thể 200ml – 125.000đ</li>
+                        <li>Nước Sen Hậu Giang 140ml – 195.000đ</li>
+                    </ul>
+                    <p><em>*Các vỏ chai nhỏ như son, tinh chất 5ml, chai thử 50ml... được tính là vỏ nhỏ.</em></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div style="width:40%;margin:auto">
-        <p>
-            Từ 10 vỏ chai lớn (hũ, tuýp, lọ, túi refill,...) bất kỳ của Cocoon hoặc 30 vỏ chai nhỏ (bao gồm bao bì dạng thỏi son, tinh chất chấm mụn và các sản phẩm dùng thử), bạn đổi được 1 trong các sản phẩm sau:
-        </p>
-        <ol>
-            <li>Cà Phê Đắk Lắk Làm Sạch Da Chết Cơ Thể 200ml giá 125.000đ</li>
-            <li>Cà Phê Đắk Lắk Làm Sạch Da Chết Mặt 150ml giá 165.000đ</li>
-            <li>Nước Dưỡng Tóc Tinh Dầu Bưởi 140ml giá 165.000đ</li>
-            <li>Gel Bí Đao Rửa Mặt 140ml giá 195.000đ</li>
-            <li>Sữa Rửa Mặt Nghệ Hưng yên 140ml giá 195.000đ</li>
-            <li>Gel Rửa Mặt Hoa Hồng 140ml giá 195.000đ</li>
-            <li>Gel Rửa Mặt Cà Phê Đắk Lắk 140ml giá 195.000đ</li>
-            <li>Đường Thốt Nốt Làm Sạch Da Chết Cơ Thể 200ml giá 165.000đ</li>
-            <li>Nước Nghệ Hưng Yên 140ml giá 195.000đ</li>
-            <li>Nước Bí Đao Cân Bằng Da 140ml giá 195.000đ</li>
-            <li>Nước Sen Hậu Giang 140ml giá 195.000đ</li>
-            <li>Nước Dưỡng Da Đầu Bồ Kết 140ml giá 185.000đ</li>
-            <li>Sữa Rửa Mặt Sen Hậu Giang 140ml giá 195.000đ</li>
-        </ol>
-        <h3>Vỏ chai của nó cụ thể bao gồm:</h3>
-        <ul>
-            <li>Sữa Chống Nắng Bí Đao 5ml</li>
-            <li>Cà Phê Đắk Lắk Làm Sạch Môi 5g</li>
-            <li>Son Dưỡng Dầu Dừa Bến Tre 5g</li>
-            <li>Dung Dịch Chấm Mụn Bí Đao 5ml</li>
-            <li>Tinh Chất Nghệ Hưng Yên C10 5ml</li>
-            <li>Tinh Chất Nghệ Hưng Yên C22 5ml</li>
-            <li>Nước Tẩy Trang Bí Đao 50ml</li>
-            <li>Sữa Rửa Mặt Sen Hậu Giang 50ml</li>
-            <li>Gel Bí Đao Rửa Mặt 50ml</li>
-            <li>Nước Sen Hậu Giang 50ml</li>
-            <li>Dầu Gội Bưởi 50ml</li>
-            <li>Gel Tắm Đường Thốt Nốt An Giang 50ml</li>
-            <li>Túi refill Cà phê Đắk Lắk/Đường Thốt Nốt An Giang Làm Sạch Da Chết Cơ Thể 200ml</li>
-        </ul>
-        <h3>(Tất cả các sản phẩm còn lại được tính là vỏ chai lớn)</h3>
 
-        <img style="width:100%;margin:auto" src="Images/doichai.png" />
-    </div>
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Cocoon Việt Nam • Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

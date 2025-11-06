@@ -3,8 +3,8 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="css/trangsanpham.css" />
-    <link href="css/trangchu.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+    <link href="css/menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -18,28 +18,18 @@
 
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link active" href="trangchu.html">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Khuyến mãi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trangchu.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="khuyenmai.html">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lienhe.html">Liên hệ</a></li>
                 </ul>
                 <form class="d-flex me-2">
                     <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
                 </form>
-                <a class="btn btn-sm btn-light" href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a class="btn btn-sm btn-light" href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
         </div>
-    </div>
     </nav>
-        <img width="100%" src="Images/anhnen-1.png" />
-    </div>
-    <div class="discription">
-        <p>
-            VEGAN - Mỹ phẩm 100% thuần chay – cho nét đẹp thuần Việt
-            thương hiệu mỹ phẩm 100% sản xuất tại Việt Nam
-            <br />
-            chúng tôi được sinh ra để mang lại cho bạn một làn da, một mái tóc luôn khỏe mạnh, trẻ trung và tràn đầy sức sống từ những nguồn nguyên liệu đơn giản và gần gũi mà bạn ăn hằng ngày.
-        </p>
-    </div>
     <!-- ------------------ MENU DANH MỤC ------------------ -->
     <!-- ------------------ SLIDE / BANNER ------------------ -->
     <div id="bannerCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
@@ -50,16 +40,16 @@
             <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            </div>
+        </div>
 
         <!-- Ảnh slide -->
-            <div class="carousel-inner">
+        <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="4000">
-                    <img src="images/slide1.jpg" class="d-block w-100 img-fluid" alt="Banner 1">
-                </div>
+                <img src="images/slide1.jpg" class="d-block w-100 img-fluid" alt="Banner 1">
+            </div>
             <div class="carousel-item" data-bs-interval="4000">
-                    <img src="images/slide2.jpg" class="d-block w-100 img-fluid" alt="Banner 2">
-        </div>
+                <img src="images/slide2.jpg" class="d-block w-100 img-fluid" alt="Banner 2">
+            </div>
             <div class="carousel-item" data-bs-interval="4000">
                 <img src="images/slide3.jpg" class="d-block w-100 img-fluid" alt="Banner 3">
             </div>
@@ -84,340 +74,343 @@
     </div>
     <div class="layout">
         <div class="product-container">
-                <!-- product-box -->
-                <!-- Sản phẩm 1 -->
-                <a href="sanpham/Xit-Khoang-Nghe-Hung-Yen-130ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_1.png" alt="Xịt Khoáng Nghệ Hưng Yên 130ml" />
+            <!-- product-box -->
+            <!-- Sản phẩm 1 -->
+            <a href="sanpham/Xit-Khoang-Nghe-Hung-Yen-130ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_1.png" alt="Xịt Khoáng Nghệ Hưng Yên 130ml" />
+                </div>
+                <div class="product-info">
+                    <h3>Xịt Khoáng Nghệ Hưng Yên 130ml</h3>
+                    <p>Sáng da và chống oxi hóa.</p>
+                    <div class="price">
+                        <p class="new">212.000 đ</p>
+                        <del>250.000</del>
                     </div>
-                    <div class="product-info">
-                        <h3>Xịt Khoáng Nghệ Hưng Yên 130ml</h3>
-                        <p>Sáng da và chống oxi hóa.</p>
-                        <div class="price">
-                            <p class="new">212.000 đ</p>
-                            <del>250.000</del>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 2 -->
+            <a href="sanpham/Gel-Rua-Mat-Bi-Đao-140ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_2.png" alt="Gel Rửa Mặt Bí Đao 140ml">
+                </div>
+                <div class="product-info">
+                    <h3>Gel Rửa Mặt Bí Đao 140ml</h3>
+                    <p>Làm sạch bụi bẩn, giảm dầu thừa, dịu da.</p>
+                    <div class="price">
+                        <p class="new">172.800 đ</p>
+                        <del>192.000 đ</del>
                     </div>
-                </a>
-                <!-- Sản phẩm 2 -->
-                <a href="sanpham/Gel-Rua-Mat-Bi-Đao-140ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_2.png" alt="Gel Rửa Mặt Bí Đao 140ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Gel Rửa Mặt Bí Đao 140ml</h3>
-                        <p>Làm sạch bụi bẩn, giảm dầu thừa, dịu da.</p>
-                        <div class="price">
-                            <p class="new">172.800 đ</p>
-                            <del>192.000 đ</del>
-                        </div>
-                    </div>
-                </a>
+                </div>
+            </a>
 
-                <!-- Sản phẩm 3 -->
-                <a href="sanpham/Gel-Rua-Mat-Hoa-Hong-140ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_3.png" alt="Gel Rửa Mặt Hoa Hồng 140ml">
+            <!-- Sản phẩm 3 -->
+            <a href="sanpham/Gel-Rua-Mat-Hoa-Hong-140ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_3.png" alt="Gel Rửa Mặt Hoa Hồng 140ml">
+                </div>
+                <div class="product-info">
+                    <h3>Gel Rửa Mặt Hoa Hồng 140ml</h3>
+                    <p>Làm sạch dịu nhẹ, cấp ẩm, thích hợp da khô.</p>
+                    <div class="price">
+                        <del>200.000 đ</del>
+                        <p class="new">153.600 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Gel Rửa Mặt Hoa Hồng 140ml</h3>
-                        <p>Làm sạch dịu nhẹ, cấp ẩm, thích hợp da khô.</p>
-                        <div class="price">
-                            <del>200.000 đ</del>
-                            <p class="new">153.600 ₫</p>
-                        </div>
-                    </div>
-                </a>
+                </div>
+            </a>
 
-                <!-- Sản phẩm 4 -->
-                <a href="sanpham/Nuoc-Tay-Trang-Bi-Dao-500ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_4.png" alt="Nước Tẩy Trang Bí Đao 500ml">
+            <!-- Sản phẩm 4 -->
+            <a href="sanpham/Nuoc-Tay-Trang-Bi-Dao-500ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_4.png" alt="Nước Tẩy Trang Bí Đao 500ml">
+                </div>
+                <div class="product-info">
+                    <h3>Nước Tẩy Trang Bí Đao 500ml</h3>
+                    <p>Làm sạch trang điểm nhẹ nhàng.</p>
+                    <div class="price">
+                        <del>295.000 ₫</del>
+                        <p class="new">260.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Nước Tẩy Trang Bí Đao 500ml</h3>
-                        <p>Làm sạch trang điểm nhẹ nhàng.</p>
-                        <div class="price">
-                            <del>295.000 ₫</del>
-                            <p class="new">260.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 5 -->
+            <a href="sanpham/Dau-Tay-Trang-Hoa-Hong-310ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_5.png" alt="Dầu Tẩy Trang Hoa Hồng 310ml">
+                </div>
+                <div class="product-info">
+                    <h3>Dầu Tẩy Trang Hoa Hồng 310ml</h3>
+                    <p>Làm sạch sâu và dưỡng ẩm</p>
+                    <div class="price">
+                        <del>400.000đ</del>
+                        <p class="new">339.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 5 -->
-                <a href="sanpham/Dau-Tay-Trang-Hoa-Hong-310ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_5.png" alt="Dầu Tẩy Trang Hoa Hồng 310ml">
+                </div>
+            </a>
+            <!-- Sản phẩm 6 -->
+            <a href="sanpham/Nuoc-Tay-Trang-Hoa-Hong-310ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_6.png" alt="Nước Tẩy Trang Hoa Hồng 310ml">
+                </div>
+                <div class="product-info">
+                    <h3>Nước Tẩy Trang Hoa Hồng 310ml</h3>
+                    <p>Làm sạch sâu và cấp ẩm.</p>
+                    <div class="price">
+                        <del>280.000 ₫</del>
+                        <p class="new">241.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Dầu Tẩy Trang Hoa Hồng 310ml</h3>
-                        <p>Làm sạch sâu và dưỡng ẩm</p>
-                        <div class="price">
-                            <del>400.000đ</del>
-                            <p class="new">339.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 7 -->
+            <a href="sanpham/Sua-Rua-Mat-Sen-Hau-Giang-140ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_7.png" alt="Sửa Rửa Mặt Sen Hậu Giang 140ml">
+                </div>
+                <div class="product-info">
+                    <h3>Sửa Rửa Mặt Sen Hậu Giang 140ml</h3>
+                    <p>Làm sạch, làm dịu da và dưỡng ẩm</p>
+                    <div class="price">
+                        <del>250.000 ₫</del>
+                        <p class="new">192.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 6 -->
-                <a href="sanpham/Nuoc-Tay-Trang-Hoa-Hong-310ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_6.png" alt="Nước Tẩy Trang Hoa Hồng 310ml">
+                </div>
+            </a>
+            <!-- Sản phẩm 8 -->
+            <a href="sanpham/Gel-Rua-Mat-Ca-Phe-Dak-Lak.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_8.png" alt="Gel Rửa Mặt Cà Phê Đắk Lắk">
+                </div>
+                <div class="product-info">
+                    <h3>Gel Rửa Mặt Cà Phê Đắk Lắk</h3>
+                    <p>Làm cho làn da mềm mại và rạng rỡ</p>
+                    <div class="price">
+                        <del>300.000 ₫</del>
+                        <p class="new">290.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Nước Tẩy Trang Hoa Hồng 310ml</h3>
-                        <p>Làm sạch sâu và cấp ẩm.</p>
-                        <div class="price">
-                            <del>280.000 ₫</del>
-                            <p class="new">241.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 9 -->
+            <a href="sanpham/Nuoc-Can-Bang-Sen-Hau-Giang-500ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_9.png" alt="Nước Cân Bằng Sen Hậu Giang 500ml">
+                </div>
+                <div class="product-info">
+                    <h3>Nước Cân Bằng Sen Hậu Giang 500ml</h3>
+                    <p>Làm sạch, làm dịu da và dưỡng ẩm</p>
+                    <div class="price">
+                        <del>450.000 ₫</del>
+                        <p class="new">418.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 7 -->
-                <a href="sanpham/Sua-Rua-Mat-Sen-Hau-Giang-140ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_7.png" alt="Sửa Rửa Mặt Sen Hậu Giang 140ml">
+                </div>
+            </a>
+            <!-- Sản phẩm 10 -->
+            <a href="sanpham/Nuoc-Can-Bang-Nghe-Hung-Yen-310ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_10.png" alt="Nước Cân Bằng Nghệ Hưng Yên 310ml">
+                </div>
+                <div class="product-info">
+                    <h3>Nước Cân Bằng Nghệ Hưng Yên 310ml</h3>
+                    <p>Làm sáng da và cấp ẩm</p>
+                    <div class="price">
+                        <del>350.000 ₫</del>
+                        <p class="new">:290.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Sửa Rửa Mặt Sen Hậu Giang 140ml</h3>
-                        <p>Làm sạch, làm dịu da và dưỡng ẩm</p>
-                        <div class="price">
-                            <del>250.000 ₫</del>
-                            <p class="new">192.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 11 -->
+            <a href="sanpham/Mat-Na-Nghe-Hung-Yen-100ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_11.png" alt="Mặt Nạ Nghệ Hưng Yên 100ml">
+                </div>
+                <div class="product-info">
+                    <h3>Mặt Nạ Nghệ Hưng Yên 100ml</h3>
+                    <p>Da rạng rỡ và mịn màng.</p>
+                    <div class="price">
+                        <del>400.000 ₫</del>
+                        <p class="new">339.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 8 -->
-                <a href="sanpham/Gel-Rua-Mat-Ca-Phe-Dak-Lak.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_8.png" alt="Gel Rửa Mặt Cà Phê Đắk Lắk">
+                </div>
+            </a>
+            <!-- Sản phẩm 12 -->
+            <a href="sanpham/Mat-Na-Bi-Dao-100ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_12.png" alt="Mặt Nạ Bí Đao 100ml">
+                </div>
+                <div class="product-info">
+                    <h3>Mặt Nạ Bí Đao 100ml</h3>
+                    <p>Giảm dầu và mụn.</p>
+                    <div class="price">
+                        <del>400.000 ₫</del>
+                        <p class="new">339.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Gel Rửa Mặt Cà Phê Đắk Lắk</h3>
-                        <p>Làm cho làn da mềm mại và rạng rỡ</p>
-                        <div class="price">
-                            <del>300.000 ₫</del>
-                            <p class="new">290.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 13 -->
+            <a href="sanpham/Chat-Nghe-Hung-Yen-C22-30ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_13.png" alt="Chất Nghệ Hưng Yên C22 30ml">
+                </div>
+                <div class="product-info">
+                    <h3>Chất Nghệ Hưng Yên C22 30ml</h3>
+                    <p>Sáng da và mờ vết thâm</p>
+                    <div class="price">
+                        <del>500.000 ₫</del>
+                        <p class="new">457.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 9 -->
-                <a href="sanpham/Nuoc-Can-Bang-Sen-Hau-Giang-500ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_9.png" alt="Nước Cân Bằng Sen Hậu Giang 500ml">
+                </div>
+            </a>
+            <!-- Sản phẩm 14 -->
+            <a href="sanpham/Tinh-Chat-Hoa-Hong-30ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_14.png" alt="Tinh Chất Hoa Hồng 30ml">
+                </div>
+                <div class="product-info">
+                    <h3>Tinh Chất Hoa Hồng 30ml</h3>
+                    <p>Cấp ẩm và phục hồi.</p>
+                    <div class="price">
+                        <del>300.000 ₫</del>
+                        <p class="new">261.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Nước Cân Bằng Sen Hậu Giang 500ml</h3>
-                        <p>Làm sạch, làm dịu da và dưỡng ẩm</p>
-                        <div class="price">
-                            <del>450.000 ₫</del>
-                            <p class="new">418.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 15 -->
+            <a href="sanpham/Tinh-Chat-Bi-Dao-70ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_15.png" alt="Tinh Chất Bí Đao 70ml">
+                </div>
+                <div class="product-info">
+                    <h3>Tinh Chất Bí Đao 70ml</h3>
+                    <p>Serum giảm mụn, hỗ trợ làm sáng da</p>
+                    <div class="price">
+                        <del>295.000 ₫</del>
+                        <p class="new">265.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 10 -->
-                <a href="sanpham/Nuoc-Can-Bang-Nghe-Hung-Yen-310ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_10.png" alt="Nước Cân Bằng Nghệ Hưng Yên 310ml">
+                </div>
+            </a>
+            <!-- Sản phẩm 16 -->
+            <a href="sanpham/Tinh-Chat-Bi-Dao-N7-70ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_16.png" alt="Tinh Chất Bí Đao N7 70ml">
+                </div>
+                <div class="product-info">
+                    <h3>Tinh Chất Bí Đao N7 70ml</h3>
+                    <p>Sạch mụn và mờ vết thâm.</p>
+                    <div class="price">
+                        <del>350.000 ₫</del>
+                        <p class="new">290.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Nước Cân Bằng Nghệ Hưng Yên 310ml</h3>
-                        <p>Làm sáng da và cấp ẩm</p>
-                        <div class="price">
-                            <del>350.000 ₫</del>
-                            <p class="new">:290.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 17 -->
+            <a href="sanpham/Sap-Duong-Am-Da-Nang-Sen-Hau-Giang-30ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_17.png" alt="Sáp Dưỡng Ẩm Đa Năng Sen Hậu Giang 30ml">
+                </div>
+                <div class="product-info">
+                    <h3>Sáp Dưỡng Ẩm Đa Năng Sen Hậu Giang 30ml</h3>
+                    <p>Dưỡng ẩm sâu vào những vùng da rất khô và nhạy cảm.</p>
+                    <div class="price">
+                        <del>250.000 ₫</del>
+                        <p class="new">192.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 11 -->
-                <a href="sanpham/Mat-Na-Nghe-Hung-Yen-100ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_11.png" alt="Mặt Nạ Nghệ Hưng Yên 100ml">
+                </div>
+            </a>
+            <!-- Sản phẩm 18 -->
+            <a href="sanpham/Thach-Nghe-Hung-Yen-100ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_18.png" alt="Thạch Nghệ Hưng Yên 100ml">
+                </div>
+                <div class="product-info">
+                    <h3>Thạch Nghệ Hưng Yên 100ml</h3>
+                    <p>Da sáng rạng rỡ và mịn màng.</p>
+                    <div class="price">
+                        <del>400.000 ₫</del>
+                        <p class="new">378.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Mặt Nạ Nghệ Hưng Yên 100ml</h3>
-                        <p>Da rạng rỡ và mịn màng.</p>
-                        <div class="price">
-                            <del>400.000 ₫</del>
-                            <p class="new">339.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 19 -->
+            <a href="sanpham/Thach-Hoa-Hong-Duong-Am-100ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_19.png" alt="Thạch Hoa Hồng Dưỡng Ẩm 100ml">
+                </div>
+                <div class="product-info">
+                    <h3>Thạch Hoa Hồng Dưỡng Ẩm 100ml</h3>
+                    <p>Cấp ẩm và nuôi dưỡng.</p>
+                    <div class="price">
+                        <del>400.000 ₫</del>
+                        <p class="new">378.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 12 -->
-                <a href="sanpham/Mat-Na-Bi-Dao-100ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_12.png" alt="Mặt Nạ Bí Đao 100ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Mặt Nạ Bí Đao 100ml</h3>
-                        <p>Giảm dầu và mụn.</p>
-                        <div class="price">
-                            <del>400.000 ₫</del>
-                            <p class="new">339.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 13 -->
-                <a href="sanpham/Chat-Nghe-Hung-Yen-C22-30ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_13.png" alt="Chất Nghệ Hưng Yên C22 30ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Chất Nghệ Hưng Yên C22 30ml</h3>
-                        <p>Sáng da và mờ vết thâm</p>
-                        <div class="price">
-                            <del>500.000 ₫</del>
-                            <p class="new">457.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 14 -->
-                <a href="sanpham/Tinh-Chat-Hoa-Hong-30ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_14.png" alt="Tinh Chất Hoa Hồng 30ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Tinh Chất Hoa Hồng 30ml</h3>
-                        <p>Cấp ẩm và phục hồi.</p>
-                        <div class="price">
-                            <del>300.000 ₫</del>
-                            <p class="new">261.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 15 -->
-                <a href="sanpham/Tinh-Chat-Bi-Dao-70ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_15.png" alt="Tinh Chất Bí Đao 70ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Tinh Chất Bí Đao 70ml</h3>
-                        <p>Serum giảm mụn, hỗ trợ làm sáng da</p>
-                        <div class="price">
-                            <del>295.000 ₫</del>
-                            <p class="new">265.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 16 -->
-                <a href="sanpham/Tinh-Chat-Bi-Dao-N7-70ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_16.png" alt="Tinh Chất Bí Đao N7 70ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Tinh Chất Bí Đao N7 70ml</h3>
-                        <p>Sạch mụn và mờ vết thâm.</p>
-                        <div class="price">
-                            <del>350.000 ₫</del>
-                            <p class="new">290.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 17 -->
-                <a href="sanpham/Sap-Duong-Am-Da-Nang-Sen-Hau-Giang-30ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_17.png" alt="Sáp Dưỡng Ẩm Đa Năng Sen Hậu Giang 30ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Sáp Dưỡng Ẩm Đa Năng Sen Hậu Giang 30ml</h3>
-                        <p>Dưỡng ẩm sâu vào những vùng da rất khô và nhạy cảm.</p>
-                        <div class="price">
-                            <del>250.000 ₫</del>
-                            <p class="new">192.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 18 -->
-                <a href="sanpham/Thach-Nghe-Hung-Yen-100ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_18.png" alt="Thạch Nghệ Hưng Yên 100ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Thạch Nghệ Hưng Yên 100ml</h3>
-                        <p>Da sáng rạng rỡ và mịn màng.</p>
-                        <div class="price">
-                            <del>400.000 ₫</del>
-                            <p class="new">378.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 19 -->
-                <a href="sanpham/Thach-Hoa-Hong-Duong-Am-100ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_19.png" alt="Thạch Hoa Hồng Dưỡng Ẩm 100ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Thạch Hoa Hồng Dưỡng Ẩm 100ml</h3>
-                        <p>Cấp ẩm và nuôi dưỡng.</p>
-                        <div class="price">
-                            <del>400.000 ₫</del>
-                            <p class="new">378.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 20 -->
+                </div>
+            </a>
+            <!-- Sản phẩm 20 -->
             <a href="sanpham/Thach-Bi-Dao-30ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_20.png" alt="Thạch Bí Đao 30ml">
+                <div class="product-image">
+                    <img src="Images/sanpham_20.png" alt="Thạch Bí Đao 30ml">
+                </div>
+                <div class="product-info">
+                    <h3>Thạch Bí Đao 30ml</h3>
+                    <p>Kem gel cấp ẩm, làm dịu, nhẹ mặt.</p>
+                    <div class="price">
+                        <del>385.000 ₫</del>
+                        <p class="new">345.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Thạch Bí Đao 30ml</h3>
-                        <p>Kem gel cấp ẩm, làm dịu, nhẹ mặt.</p>
-                        <div class="price">
-                            <del>385.000 ₫</del>
-                            <p class="new">345.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 21 -->
+                </div>
+            </a>
+            <!-- Sản phẩm 21 -->
             <a href="sanpham/San-Pham-Cocoon-Sua-Chong-Nang-Bi-Dao-15ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_21.png" alt="Sản Phẩm Cocoon Sữa Chống Nắng Bí Đao 15ml">
+                <div class="product-image">
+                    <img src="Images/sanpham_21.png" alt="Sản Phẩm Cocoon Sữa Chống Nắng Bí Đao 15ml">
+                </div>
+                <div class="product-info">
+                    <h3>Sản Phẩm Cocoon Sữa Chống Nắng Bí Đao 15ml</h3>
+                    <p>Chống nắng, bảo vệ da trước các tia UV.</p>
+                    <div class="price">
+                        <del>200.000 ₫</del>
+                        <p class="new">182.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Sản Phẩm Cocoon Sữa Chống Nắng Bí Đao 15ml</h3>
-                        <p>Chống nắng, bảo vệ da trước các tia UV.</p>
-                        <div class="price">
-                            <del>200.000 ₫</del>
-                            <p class="new">182.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 22 -->
+                </div>
+            </a>
+            <!-- Sản phẩm 22 -->
             <a href="sanpham/Kem-Chong-Nang-Bi-Dao-50ml.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_22.png" alt="Kem Chống Nắng Bí Đao 50ml">
+                <div class="product-image">
+                    <img src="Images/sanpham_22.png" alt="Kem Chống Nắng Bí Đao 50ml">
+                </div>
+                <div class="product-info">
+                    <h3>Kem Chống Nắng Bí Đao 50ml</h3>
+                    <p>Chống nắng, bảo vệ da trước các tia UV.</p>
+                    <div class="price">
+                        <del>400.000 ₫</del>
+                        <p class="new">388.000 ₫</p>
                     </div>
-                    <div class="product-info">
-                        <h3>Kem Chống Nắng Bí Đao 50ml</h3>
-                        <p>Chống nắng, bảo vệ da trước các tia UV.</p>
-                        <div class="price">
-                            <del>400.000 ₫</del>
-                            <p class="new">388.000 ₫</p>
-                        </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 23 -->
+            <a href="sanpham/Ca-Phe-Dak-Lak-Lam=Sach-Da-Chet-Mat-150ml.html" class="product-box">
+                <div class="product-image">
+                    <img src="Images/sanpham_23.png" alt="Cà Phê Đắk Lắk Làm Sạch Da Chết Mặt 150ml">
+                </div>
+                <div class="product-info">
+                    <h3>Cà Phê Đắk Lắk Làm Sạch Da Chết Mặt 150ml</h3>
+                    <p>Làm cho da mềm mại và rạng rỡ.</p>
+                    <div class="price">
+                        <del>200.000 ₫</del>
+                        <p class="new">162.000 ₫</p>
                     </div>
-                </a>
-                <!-- Sản phẩm 23 -->
-                <a href="chitiet5.html" class="product-box">
-                    <div class="product-image">
-                        <img src="Images/sanpham_23.png" alt="Cà Phê Đắk Lắk Làm Sạch Da Chết Mặt 150ml">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cà Phê Đắk Lắk Làm Sạch Da Chết Mặt 150ml</h3>
-                        <p>Làm cho da mềm mại và rạng rỡ.</p>
-                        <div class="price">
-                            <del>200.000 ₫</del>
-                            <p class="new">162.000 ₫</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Sản phẩm 24 -->
-
-            </div>
+                </div>
+            </a>
+            <!-- Sản phẩm 24 -->
         </div>
-
-            <script>
-                function toggleMenu() {
-                    document.getElementById("sidebar").classList.toggle("active");
-                }
-            </script>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
