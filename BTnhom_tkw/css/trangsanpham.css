@@ -99,6 +99,82 @@ body {
         .product-box .product-info p {
             font-size: 1rem;
         }
+/* --- Nút mua hàng --- */
+/* Nút */
+.product-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-add-cart {
+    background-color: #f1c40f;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-buy-now {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+    .btn-add-cart:hover,
+    .btn-buy-now:hover {
+        opacity: 0.9;
+    }
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .product-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+/* Nút */
+.product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-add-cart {
+    background-color: #f1c40f;
+    color: #000;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-buy-now {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+    .btn-add-cart:hover,.btn-buy-now:hover {
+        opacity: 0.9;
+    }
+
 /* --- Giá --- */
 .price {
     display: flex;

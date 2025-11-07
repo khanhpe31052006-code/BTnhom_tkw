@@ -9,101 +9,83 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="../trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="../trangchu.html">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../sanpham.html">Sản phẩm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../khuyenmai.html">Khuyến mãi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../lienhe.html">Liên hệ</a></li>
-                </ul>
-                <form class="d-flex me-2">
-                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
-                </form>
-                <a class="btn btn-sm btn-light" href="../giohang.html"><i class="fa fa-shopping-cart"></i></a>
-            </div>
-        </div>
-    </nav>
-
+    <div id="header"></div>
     <!-- Khối sản phẩm chính -->
-    <div class="container">
-        <!-- Hình ảnh sản phẩm -->
-        <div class="product-image">
-            <img src="../images/sanpham_14.png" alt="Cocoon">
+    <main>
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="../images/sanpham_14.png" alt="Cocoon">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Tinh Chất Hoa Hồng 30ml</h1>
+                <div class="price">
+                    <del>300.000 ₫</del>
+                    <p class="new">261.000 ₫</p>
+                </div>
+                <div class="description">
+                    Cấp ẩm và phục hồi.
+                </div>
+                <div class="buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Tinh Chất Hoa Hồng 30ml', 261000, '../images/sanpham_14.png')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <!-- Nội dung sản phẩm -->
-        <div class="product-details">
-            <h1>Tinh Chất Hoa Hồng 30ml</h1>
-            <div class="price">
-                <del>300.000 ₫</del>
-                <p class="new">261.000 ₫</p>
-            </div>
-            <div class="description">
-                Cấp ẩm và phục hồi.
-            </div>
-            <div class="buttons">
-                <button class="buy-now">Mua ngay</button>
-                <button class="add-cart">Thêm vào giỏ hàng</button>
-            </div>
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Da thường/Mọi loại da</td></tr>
+                <tr><td>Dung Tích</td><td>30ml</td></tr>
+            </table>
         </div>
-    </div>
 
-    <!-- Khối mô tả dài xuống -->
-    <div class="info-box">
-        <h2>Thông số sản phẩm</h2>
-        <table>
-            <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
-            <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
-            <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
-            <tr><td>Loại da</td><td>Da thường/Mọi loại da</td></tr>
-            <tr><td>Dung Tích</td><td>30ml</td></tr>
-        </table>
-    </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <ul>
+                <li>Lấy 4-6 giọt tinh chất vào lòng bàn tay.</li>
+                <li>Xoa đều và mát-xa lên da mặt sạch, tránh vùng mắt.</li>
+                <li>Sử dụng sáng và tối.</li>
+            </ul>
+        </div>
 
-    <div class="info-box">
-        <h2>Hướng dẫn sử dụng</h2>
-        <ul>
-            <li>Lấy 4-6 giọt tinh chất vào lòng bàn tay.</li>
-            <li>Xoa đều và mát-xa lên da mặt sạch, tránh vùng mắt.</li>
-            <li>Sử dụng sáng và tối.</li>
-        </ul>
-    </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Nước cất hoa hồng hữu cơ:</b> mang mùi hương hoa hồng đặc trưng, có tác dụng làm mềm, chống oxy hóa và làm dịu da.</li>
+                <li><b>Chiết xuất hoa hồng từ cánh hoa hồng Damask:</b>  làm dịu da, bảo vệ tế bào da khỏi tác hại của môi trường, giúp duy trì làn da ở trạng thái cân bằng, phục hồi làn da đủ ẩm và khoẻ mạnh.</li>
+                <li><b>Chứa 5% Vitamin B5:</b> dưỡng ẩm, kháng viêm và làm dịu làn da dễ bị kích ứng và da nhạy cảm</li>
+                <li><b>Chứa 5% Betaine chiết xuất từ củ cải đường:</b> bảo vệ tế bào da khỏi căng thẳng từ môi trường bên ngoài như bức xạ UV, ô nhiễm môi trường và tăng khả năng giữ ẩm cho da dưới tác động của nhiệt độ và khói bụi.</li>
+                <li><b>Chứa 5% Urea:</b>  điều hoà chức năng và cấu trúc của lớp biểu bì, giúp duy trì độ ẩm tự nhiên, cải thiện độ đàn hồi và làm lành những tổn thương của làn da</li>
+                <li><b>Chứa 5% Ectoin:</b>thúc đẩy quá trình sửa chữa hàng rào bảo vệ da và dưỡng ẩm lâu dài, ngăn ngừa những dấu hiệu lão hóa và giảm kích ứng, hỗ trợ hệ thống miễn dịch của da, giữ cho làn da khỏe mạnh, cải thiện những tổn thương do bức xạ UVB, UVA và nhiệt độ khắc nghiệt.</li>
+                <li><b>HA đa tầng (sodium hyaluronate và hydrolyzed hyaluronic acid):</b> cấp nước vào sâu lớp tế bào biểu bì, hỗ trợ làm lành tổn thương và cải thiện hàng rào tự nhiên của da. </li>
+            </ul>
+            <h2>Thành phần đầy đủ:</h2>
+            <p>
+                Aqua/Water, Rosa Damascena Flower Water, Panthenol, Betaine, Hydroxyethyl Urea, Biosaccharide Gum-1, Arginine,  Glycine, Alanine, Serine, Valine, Proline, Threonine, Isoleucine, Histidine, Phenylalanine,  Aspartic Acid, PCA, Sodium PCA, Rosa Damascena Extract, Ectoin, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Saccharide Isomerate, Aloe Barbadensis Leaf Juice, Allantoin, Glycerin, Propanediol, Glycereth-26, Pentylene Glycol, Butylene Glycol, Xylitol, Hydroxyacetophenone, Xylitylglucoside, Ethylhexylglycerin, Anhydroxylitol, Hydroxyethylcellulose, Xanthan Gum, Trisodium Ethylenediamine Disuccinate, Phenoxyethanol, Sodium Lactate.
+            </p>
+        </div>
 
-    <div class="info-box">
-        <h2>Thành phần sản phẩm</h2>
-        <p><strong>Thành phần chính:</strong></p>
-        <ul>
-            <li><b>Nước cất hoa hồng hữu cơ:</b> mang mùi hương hoa hồng đặc trưng, có tác dụng làm mềm, chống oxy hóa và làm dịu da.</li>
-            <li><b>Chiết xuất hoa hồng từ cánh hoa hồng Damask:</b>  làm dịu da, bảo vệ tế bào da khỏi tác hại của môi trường, giúp duy trì làn da ở trạng thái cân bằng, phục hồi làn da đủ ẩm và khoẻ mạnh.</li>
-            <li><b>Chứa 5% Vitamin B5:</b> dưỡng ẩm, kháng viêm và làm dịu làn da dễ bị kích ứng và da nhạy cảm</li>
-            <li><b>Chứa 5% Betaine chiết xuất từ củ cải đường:</b> bảo vệ tế bào da khỏi căng thẳng từ môi trường bên ngoài như bức xạ UV, ô nhiễm môi trường và tăng khả năng giữ ẩm cho da dưới tác động của nhiệt độ và khói bụi.</li>
-            <li><b>Chứa 5% Urea:</b>  điều hoà chức năng và cấu trúc của lớp biểu bì, giúp duy trì độ ẩm tự nhiên, cải thiện độ đàn hồi và làm lành những tổn thương của làn da</li>
-            <li><b>Chứa 5% Ectoin:</b>thúc đẩy quá trình sửa chữa hàng rào bảo vệ da và dưỡng ẩm lâu dài, ngăn ngừa những dấu hiệu lão hóa và giảm kích ứng, hỗ trợ hệ thống miễn dịch của da, giữ cho làn da khỏe mạnh, cải thiện những tổn thương do bức xạ UVB, UVA và nhiệt độ khắc nghiệt.</li>
-            <li><b>HA đa tầng (sodium hyaluronate và hydrolyzed hyaluronic acid):</b> cấp nước vào sâu lớp tế bào biểu bì, hỗ trợ làm lành tổn thương và cải thiện hàng rào tự nhiên của da. </li>
-        </ul>
-        <h2>Thành phần đầy đủ:</h2>
-        <p>
-            Aqua/Water, Rosa Damascena Flower Water, Panthenol, Betaine, Hydroxyethyl Urea, Biosaccharide Gum-1, Arginine,  Glycine, Alanine, Serine, Valine, Proline, Threonine, Isoleucine, Histidine, Phenylalanine,  Aspartic Acid, PCA, Sodium PCA, Rosa Damascena Extract, Ectoin, Sodium Hyaluronate, Hydrolyzed Hyaluronic Acid, Saccharide Isomerate, Aloe Barbadensis Leaf Juice, Allantoin, Glycerin, Propanediol, Glycereth-26, Pentylene Glycol, Butylene Glycol, Xylitol, Hydroxyacetophenone, Xylitylglucoside, Ethylhexylglycerin, Anhydroxylitol, Hydroxyethylcellulose, Xanthan Gum, Trisodium Ethylenediamine Disuccinate, Phenoxyethanol, Sodium Lactate.
-        </p>
-    </div>
-
-    <div class="info-box">
-        <h2>Mô tả chi tiết</h2>
-        <p>
-            Tinh Chất Cocoon Cấp Nước & Cấp Ẩm Sâu Từ Hoa Hồng 30ml dòng serum đến từ thương hiệu mỹ phẩm thuần chay Cocoon của Việt Nam, kết hợp những hoạt chất như 5% Vitamin B5, 5% Betaine, 5% Urea, Ectoin & HA, tinh chất hoa hồng cung cấp ẩm dồi dào giúp dưỡng ẩm sâu, phục hồi những tổn thương do sự mất nước gây ra. Làn da sau khi ngậm nước sẽ nhanh chóng trở nên tươi mới, căng mọng và ẩm mượt như được phủ sương.
-        </p>
-    </div>
-    <!-- FOOTER -->
-    <footer>
-        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
-    </footer>
+        <div class="info-box">
+            <h2>Mô tả chi tiết</h2>
+            <p>
+                Tinh Chất Cocoon Cấp Nước & Cấp Ẩm Sâu Từ Hoa Hồng 30ml dòng serum đến từ thương hiệu mỹ phẩm thuần chay Cocoon của Việt Nam, kết hợp những hoạt chất như 5% Vitamin B5, 5% Betaine, 5% Urea, Ectoin & HA, tinh chất hoa hồng cung cấp ẩm dồi dào giúp dưỡng ẩm sâu, phục hồi những tổn thương do sự mất nước gây ra. Làn da sau khi ngậm nước sẽ nhanh chóng trở nên tươi mới, căng mọng và ẩm mượt như được phủ sương.
+            </p>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="../js/HeadervaFooter.js"></script>
     <script src="../js/add_cart.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

@@ -9,102 +9,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="../trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="../trangchu.html">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../sanpham.html">Sản phẩm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../khuyenmai.html">Khuyến mãi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../lienhe.html">Liên hệ</a></li>
-                </ul>
-                <form class="d-flex me-2">
-                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
-                </form>
-                <a class="btn btn-sm btn-light" href="../giohang.html"><i class="fa fa-shopping-cart"></i></a>
-            </div>
-        </div>
-    </nav>
-
+    <div id="header"></div>
     <!-- Khối sản phẩm chính -->
-    <div class="container">
-        <!-- Hình ảnh sản phẩm -->
-        <div class="product-image">
-            <img src="../images/sanpham_1.png" alt="Cocoon">
+    <main>
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="../images/sanpham_1.png" alt="Cocoon">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Xịt Khoáng Cocoon Nghệ Hưng Yên Giúp Sáng Da 130ml</h1>
+                <div class="price">
+                    <del>250.000</del>
+                    <p class="new">212.000 đ</p>
+                </div>
+                <div class="description">
+                    Sáng da và chống oxi hóa.
+                </div>
+                <div class="buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Xịt Khoáng Cocoon Nghệ Hưng Yên Giúp Sáng Da 130ml', 221000, '../images/sanpham_1.png')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <!-- Nội dung sản phẩm -->
-        <div class="product-details">
-            <h1>Xịt Khoáng Cocoon Nghệ Hưng Yên Giúp Sáng Da 130ml</h1>
-            <div class="price">
-                <del>250.000</del>
-                <p class="new">212.000 đ</p>
-            </div>
-            <div class="description">
-                Sáng da và chống oxi hóa.
-            </div>
-            <div class="buttons">
-                <button class="buy-now">Mua ngay</button>
-                <button class="add-cart">Thêm vào giỏ hàng</button>
-            </div>
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Da thường/Mọi loại da</td></tr>
+                <tr><td>Dung Tích</td><td>130ml</td></tr>
+            </table>
         </div>
-    </div>
 
-    <!-- Khối mô tả dài xuống -->
-    <div class="info-box">
-        <h2>Thông số sản phẩm</h2>
-        <table>
-            <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
-            <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
-            <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
-            <tr><td>Loại da</td><td>Da thường/Mọi loại da</td></tr>
-            <tr><td>Dung Tích</td><td>130ml</td></tr>
-        </table>
-    </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <ul>
+                <li>Nhắm mắt, phun sương đều lên da mặt.</li>
+                <li>Sử dụng buổi sáng, tối và trong suốt cả ngày nếu cần.</li>
+                <li>Có thể sử dụng trước hoặc sau khi trang điểm để cấp ẩm và giữ lớp trang điểm.</li>
+                <li>Chỉ dùng ngoài da.</li>
+            </ul>
+            <p><b>Lưu ý:</b> Sản phẩm có chứa enzym SOD, đôi khi sẽ xảy ra hiện tượng kết tủa, nên lắc đều trước khi sử dụng.</p>
+        </div>
 
-    <div class="info-box">
-        <h2>Hướng dẫn sử dụng</h2>
-        <ul>
-            <li>Nhắm mắt, phun sương đều lên da mặt.</li>
-            <li>Sử dụng buổi sáng, tối và trong suốt cả ngày nếu cần.</li>
-            <li>Có thể sử dụng trước hoặc sau khi trang điểm để cấp ẩm và giữ lớp trang điểm.</li>
-            <li>Chỉ dùng ngoài da.</li>
-        </ul>
-        <p><b>Lưu ý:</b> Sản phẩm có chứa enzym SOD, đôi khi sẽ xảy ra hiện tượng kết tủa, nên lắc đều trước khi sử dụng.</p>
-    </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Chiết xuất nghệ:</b> tác dụng ngăn ngừa oxy hóa, kháng khuẩn, kháng viêm, làm dịu và làm lành các tổn thương trên da.</li>
+                <li><b>Muối khoáng:</b> giúp trung hoà các gốc tự do, làm giảm các dấu hiệu lão hoá, nếp nhăn đem lại làn da đàn hồi, căng bóng, mịn màng.</li>
+                <li><b>Enzyme SOD:</b> ngăn ngừa viêm, làm lành vết thương, cải thiện làn da xỉn màu và làm sáng da, ngăn ngừa các dấu hiệu lão hóa.</li>
+                <li><b>EGCG trích ly từ trà xanh:</b> tăng cường các dưỡng chất thẩm thấu sâu vào da.</li>
+                <li><b>Axit amin:</b>có tác dụng hỗ trợ ngừa oxy hóa da, ngăn ngừa hình thành vết thâm, giúp làm sáng, làm đều màu da.</li>
+            </ul>
+            <h2>Thành phần đầy đủ:</h2>
+            <p>Aqua/Water, Betaine, 1,2-Hexanediol, Curcuma Longa (Turmeric) Root Extract, Superoxide Dismutase (SOD), Epigallocatechin Gallatyl Glucoside, Sodium Gluconate, Copper Gluconate, Glycerin, Propanediol, Magnesium Aspartate, Sodium PCA, PCA, Aspartic Acid, Arginine, Glycine, Alanine, Serine, Valine, Proline, Threonine, Isoleucine, Histidine, Phenylalanine, Aloe Barbadensis Leaf Juice, Pentylene Glycol, Trisodium Ethylene-diamine Disuccinate, Zinc Gluconate, Tromethamine, PEG-40 Hydro-genated Castor Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Sodium Lactate, Menthyl Lactate, Sodium Benzoate, Potassium Sorbate.</p>
+        </div>
 
-    <div class="info-box">
-        <h2>Thành phần sản phẩm</h2>
-        <p><strong>Thành phần chính:</strong></p>
-        <ul>
-            <li><b>Chiết xuất nghệ:</b> tác dụng ngăn ngừa oxy hóa, kháng khuẩn, kháng viêm, làm dịu và làm lành các tổn thương trên da.</li>
-            <li><b>Muối khoáng:</b> giúp trung hoà các gốc tự do, làm giảm các dấu hiệu lão hoá, nếp nhăn đem lại làn da đàn hồi, căng bóng, mịn màng.</li>
-            <li><b>Enzyme SOD:</b> ngăn ngừa viêm, làm lành vết thương, cải thiện làn da xỉn màu và làm sáng da, ngăn ngừa các dấu hiệu lão hóa.</li>
-            <li><b>EGCG trích ly từ trà xanh:</b> tăng cường các dưỡng chất thẩm thấu sâu vào da.</li>
-            <li><b>Axit amin:</b>có tác dụng hỗ trợ ngừa oxy hóa da, ngăn ngừa hình thành vết thâm, giúp làm sáng, làm đều màu da.</li>
-        </ul>
-        <h2>Thành phần đầy đủ:</h2>
-        <p>Aqua/Water, Betaine, 1,2-Hexanediol, Curcuma Longa (Turmeric) Root Extract, Superoxide Dismutase (SOD), Epigallocatechin Gallatyl Glucoside, Sodium Gluconate, Copper Gluconate, Glycerin, Propanediol, Magnesium Aspartate, Sodium PCA, PCA, Aspartic Acid, Arginine, Glycine, Alanine, Serine, Valine, Proline, Threonine, Isoleucine, Histidine, Phenylalanine, Aloe Barbadensis Leaf Juice, Pentylene Glycol, Trisodium Ethylene-diamine Disuccinate, Zinc Gluconate, Tromethamine, PEG-40 Hydro-genated Castor Oil, Citrus Aurantium Dulcis (Orange) Peel Oil, Sodium Lactate, Menthyl Lactate, Sodium Benzoate, Potassium Sorbate.</p>
-    </div>
-
-    <div class="info-box">
-        <h2>Mô tả chi tiết</h2>
-        <p>
-            Xịt Khoáng Cocoon Nghệ Hưng Yên Giúp Sáng Da 130ml là sản phẩm xịt khoáng đến từ thương hiệu mỹ phẩm Cocoon của Việt Nam, với chiết xuất từ củ nghệ, muối khoáng, enzym SOD, EGCG và các axit amin giúp chống oxy hoá, làm sáng, mờ vết thâm đồng thời làm tăng hiệu quả kem chống nắng, giữ lớp trang điểm bền màu và bảo vệ da khỏi các tác nhân có hại từ môi trường.
-        </p>
-        <p>
-            Ngoài ra, công thức thuần chay an toàn còn mang lại cảm giác dịu nhẹ, không gây kích ứng, phù hợp cho cả da nhạy cảm.
-        </p>
-    </div>
-    <!-- FOOTER -->
-    <footer>
-        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
-    </footer>
+        <div class="info-box">
+            <h2>Mô tả chi tiết</h2>
+            <p>
+                Xịt Khoáng Cocoon Nghệ Hưng Yên Giúp Sáng Da 130ml là sản phẩm xịt khoáng đến từ thương hiệu mỹ phẩm Cocoon của Việt Nam, với chiết xuất từ củ nghệ, muối khoáng, enzym SOD, EGCG và các axit amin giúp chống oxy hoá, làm sáng, mờ vết thâm đồng thời làm tăng hiệu quả kem chống nắng, giữ lớp trang điểm bền màu và bảo vệ da khỏi các tác nhân có hại từ môi trường.
+            </p>
+            <p>
+                Ngoài ra, công thức thuần chay an toàn còn mang lại cảm giác dịu nhẹ, không gây kích ứng, phù hợp cho cả da nhạy cảm.
+            </p>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="../js/HeadervaFooter.js"></script>
     <script src="../js/add_cart.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

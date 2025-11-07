@@ -9,97 +9,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="../trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
-            </button>
+    <div id="header"></div>
+    <main>
+        <!-- Khối sản phẩm chính -->
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="../images/sanpham_4.png" alt="Cocoon">
+            </div>
 
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="../trangchu.html">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../sanpham.html">Sản phẩm</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../khuyenmai.html">Khuyến mãi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../lienhe.html">Liên hệ</a></li>
-                </ul>
-                <form class="d-flex me-2">
-                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
-                </form>
-                <a class="btn btn-sm btn-light" href="../giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Nước Tẩy Trang Bí Đao 500ml</h1>
+                <div class="price">
+                    <del>295.000 ₫</del>
+                    <p class="new">260.000 ₫</p>
+                </div>
+                <div class="description">
+                    Làm sạch trang điểm nhẹ nhàng.
+                </div>
+                <div class="buttons">
+                    <button class="buy-now">Mua ngay</button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Nước Tẩy Trang Bí Đao 500ml', 260000, '../images/sanpham_4.png')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <!-- Khối sản phẩm chính -->
-    <div class="container">
-        <!-- Hình ảnh sản phẩm -->
-        <div class="product-image">
-            <img src="../images/sanpham_4.png" alt="Cocoon">
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Da dầu/Hỗn hợp dầu</td></tr>
+                <tr><td>Dung Tích</td><td>500ml</td></tr>
+            </table>
         </div>
 
-        <!-- Nội dung sản phẩm -->
-        <div class="product-details">
-            <h1>Nước Tẩy Trang Bí Đao 500ml</h1>
-            <div class="price">
-                <del>295.000 ₫</del>
-                <p class="new">260.000 ₫</p>
-            </div>
-            <div class="description">
-                Làm sạch trang điểm nhẹ nhàng.
-            </div>
-            <div class="buttons">
-                <button class="buy-now">Mua ngay</button>
-                <button class="add-cart">Thêm vào giỏ hàng</button>
-            </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <ul>
+                <li>Thấm đều sản phẩm lên bông tẩy trang, nhẹ nhàng lau khắp mặt để làm sạch lớp trang điểm và bụi bẩn. </li>
+                <li>Dịu nhẹ cho vùng môi và mắt.</li>
+            </ul>
         </div>
-    </div>
 
-    <!-- Khối mô tả dài xuống -->
-    <div class="info-box">
-        <h2>Thông số sản phẩm</h2>
-        <table>
-            <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
-            <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
-            <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
-            <tr><td>Loại da</td><td>Da dầu/Hỗn hợp dầu</td></tr>
-            <tr><td>Dung Tích</td><td>500ml</td></tr>
-        </table>
-    </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Bí đao:</b> Theo sách y học cổ truyền, bí đao có đặc tính làm mát, làm giảm nhiệt, giúp ngăn ngừa mụn trứng cá.</li>
+                <li><b>Rau má:</b> Các hợp chất sinh học như axit axetic, asiaticoside, axit madecassic và madecassoside có trong rau má là những chất chính giúp tăng sinh collagen cho làn da, làm dịu các vết đỏ.</li>
+                <li><b>Tinh dầu tràm trà:</b>  Loại tinh dầu có mùi thơm ấm áp, cay nồng giúp ngăn ngừa mụn trứng cá, vết thương, côn trùng cắn.</li>
+                <li><b>Betaine:</b> là hoạt chất dưỡng ẩm được chiết xuất từ củ cải đường, có tác dụng bảo vệ tế bào da khỏi căng thẳng từ môi trường bên ngoài như bức xạ UV, ô nhiễm môi trường và tăng khả năng giữ ẩm cho da dưới tác động của nhiệt độ và khói bụi.</li>
+                <li><b>O-Cymen-5-Ol và Cetylpyridinium chloride:</b>Có khả năng ngăn ngừa các tác nhân gây mụn.</li>
+                <li><b>NatraGem™ S150:</b> Gồm tổ hợp chất Polyglyceryl-4 Laurate/Sebacate và Polyglyceryl-4 Caprylate/Caprate, sở hữu những ưu điểm vượt trội: có nguồn gốc 100% từ thực vật, được chứng nhận hữu cơ bởi Ecocert; có khả năng hòa tan những chất ưa dầu có trong các sản phẩm trang điểm, vì thế có khả năng làm sạch và cuốn trôi nhanh chóng lớp make up, bã nhờn và bụi bẩn trên da; khi so sánh với các chất làm sạch khác, tổ hợp chất này đã được chứng minh hạn chế gây mất nước qua da và rất an toàn trên làn da thông qua các bài test in-Vivo.</li>
+            </ul>
+            <h2>Thành phần đầy đủ:</h2>
+            <p>Aqua/Water, Polyglyceryl-4 Laurate/Sebacate, Polyglyceryl-4 Caprylate/Caprate, Betaine, Benincasa Cerifera Fruit Extract, Centella Asiatica Extract, o-Cymen-5-ol, Propanediol, Glycereth-26, Glycerin, Trisodium Ethylenediamine Disuccinate, Sodium Lactate, Cetylpyridinium Chloride, Melaleuca Alternifolia Leaf Oil, Lactic Acid.</p>
+        </div>
 
-    <div class="info-box">
-        <h2>Hướng dẫn sử dụng</h2>
-        <ul>
-            <li>Thấm đều sản phẩm lên bông tẩy trang, nhẹ nhàng lau khắp mặt để làm sạch lớp trang điểm và bụi bẩn. </li>
-            <li>Dịu nhẹ cho vùng môi và mắt.</li>
-        </ul>
-    </div>
-
-    <div class="info-box">
-        <h2>Thành phần sản phẩm</h2>
-        <p><strong>Thành phần chính:</strong></p>
-        <ul>
-            <li><b>Bí đao:</b> Theo sách y học cổ truyền, bí đao có đặc tính làm mát, làm giảm nhiệt, giúp ngăn ngừa mụn trứng cá.</li>
-            <li><b>Rau má:</b> Các hợp chất sinh học như axit axetic, asiaticoside, axit madecassic và madecassoside có trong rau má là những chất chính giúp tăng sinh collagen cho làn da, làm dịu các vết đỏ.</li>
-            <li><b>Tinh dầu tràm trà:</b>  Loại tinh dầu có mùi thơm ấm áp, cay nồng giúp ngăn ngừa mụn trứng cá, vết thương, côn trùng cắn.</li>
-            <li><b>Betaine:</b> là hoạt chất dưỡng ẩm được chiết xuất từ củ cải đường, có tác dụng bảo vệ tế bào da khỏi căng thẳng từ môi trường bên ngoài như bức xạ UV, ô nhiễm môi trường và tăng khả năng giữ ẩm cho da dưới tác động của nhiệt độ và khói bụi.</li>
-            <li><b>O-Cymen-5-Ol và Cetylpyridinium chloride:</b>Có khả năng ngăn ngừa các tác nhân gây mụn.</li>
-            <li><b>NatraGem™ S150:</b> Gồm tổ hợp chất Polyglyceryl-4 Laurate/Sebacate và Polyglyceryl-4 Caprylate/Caprate, sở hữu những ưu điểm vượt trội: có nguồn gốc 100% từ thực vật, được chứng nhận hữu cơ bởi Ecocert; có khả năng hòa tan những chất ưa dầu có trong các sản phẩm trang điểm, vì thế có khả năng làm sạch và cuốn trôi nhanh chóng lớp make up, bã nhờn và bụi bẩn trên da; khi so sánh với các chất làm sạch khác, tổ hợp chất này đã được chứng minh hạn chế gây mất nước qua da và rất an toàn trên làn da thông qua các bài test in-Vivo.</li>
-        </ul>
-        <h2>Thành phần đầy đủ:</h2>
-        <p>Aqua/Water, Polyglyceryl-4 Laurate/Sebacate, Polyglyceryl-4 Caprylate/Caprate, Betaine, Benincasa Cerifera Fruit Extract, Centella Asiatica Extract, o-Cymen-5-ol, Propanediol, Glycereth-26, Glycerin, Trisodium Ethylenediamine Disuccinate, Sodium Lactate, Cetylpyridinium Chloride, Melaleuca Alternifolia Leaf Oil, Lactic Acid.</p>
-    </div>
-
-    <div class="info-box">
-        <h2>Mô tả chi tiết</h2>
-        <p>
-            Nước Tẩy Trang Bí Đao Cocoon Winter Melon Micellar Water mới từ thương hiệu mỹ phẩm thuần chay Cocoon là sản phẩm tẩy trang được thiết kế chuyên biệt dành cho da dầu và da mụn nhạy cảm. Với công nghệ Micellar, nước tẩy trang bí đao giúp làm sạch hiệu quả lớp trang điểm, bụi bẩn và dầu thừa, mang lại làn da sạch hoàn toàn và dịu nhẹ.
-        </p>
-    </div>
-    <!-- FOOTER -->
-    <footer>
-        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
-    </footer>
+        <div class="info-box">
+            <h2>Mô tả chi tiết</h2>
+            <p>
+                Nước Tẩy Trang Bí Đao Cocoon Winter Melon Micellar Water mới từ thương hiệu mỹ phẩm thuần chay Cocoon là sản phẩm tẩy trang được thiết kế chuyên biệt dành cho da dầu và da mụn nhạy cảm. Với công nghệ Micellar, nước tẩy trang bí đao giúp làm sạch hiệu quả lớp trang điểm, bụi bẩn và dầu thừa, mang lại làn da sạch hoàn toàn và dịu nhẹ.
+            </p>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="../js/HeadervaFooter.js"></script>
     <script src="../js/add_cart.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

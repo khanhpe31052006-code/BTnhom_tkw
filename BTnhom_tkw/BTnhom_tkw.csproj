@@ -157,7 +157,10 @@
     <Content Include="js\add_cart.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\cart.js" />
+    <Content Include="js\HeadervaFooteChu.js" />
+    <Content Include="js\HeadervaFooter.js" />
     <Content Include="js\lienhe.js" />
+    <Content Include="js\thanhtoan.js" />
     <Content Include="khuyenmai.html" />
     <Content Include="lienhe.html" />
     <Content Include="sanpham.html" />
@@ -193,6 +196,7 @@
     <Content Include="sanpham\Sp6.html" />
     <Content Include="sanpham\Sp7.html" />
     <Content Include="sanpham\Sp8.html" />
+    <Content Include="thanhtoan.html" />
     <Content Include="Trangchu.html" />
     <Content Include="Web.config" />
   </ItemGroup>

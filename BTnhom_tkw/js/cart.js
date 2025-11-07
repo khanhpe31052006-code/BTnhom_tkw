@@ -70,5 +70,9 @@ function xoaSanPham(index) {
         renderCart();
     }
 }
-
+/*hàm thanh toán*/
+function checkoutCart() {
+    localStorage.setItem("checkoutFromCart", "true");
+    window.location.href = "thanhtoan.html"; // Trang thanh toán
+}
 renderCart();
