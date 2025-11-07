@@ -35,4 +35,10 @@
     document.getElementById("header").innerHTML = headerHTML;
     document.getElementById("footer").innerHTML = footerHTML;
 }
+/*hàm mua ngay*/
+function buyNow(name, price, image) {
+    const item = { name, price, image, quantity: 1 };
+    localStorage.setItem("buyNowItem", JSON.stringify(item));
+    window.location.href = "thanhtoan.html"; // Trang thanh toán
+}
 window.onload = loadHeaderVaFooter;

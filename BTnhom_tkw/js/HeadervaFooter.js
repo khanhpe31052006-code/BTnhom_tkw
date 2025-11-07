@@ -1,4 +1,5 @@
-﻿function loadHeaderVaFooter() {
+﻿//Dùng cho phần sản phẩm tại bỏ trong folder sản phẩm nên không link thường được
+function loadHeaderVaFooter() {
     // --- Header ---
     const headerHTML = `
         <nav class="navbar navbar-expand-lg sticky-top">
@@ -34,5 +35,11 @@
     // Gắn vào trang
     document.getElementById("header").innerHTML = headerHTML;
     document.getElementById("footer").innerHTML = footerHTML;
+}
+// dùng để thanh toán 
+function buyNow(name, price, image) {
+    const item = { name, price, image, quantity: 1 };
+    localStorage.setItem("buyNowItem", JSON.stringify(item));
+    window.location.href = "../thanhtoan.html"; // Trang thanh toán
 }
 window.onload = loadHeaderVaFooter;

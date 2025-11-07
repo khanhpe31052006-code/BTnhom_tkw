@@ -6,13 +6,13 @@ const discountEl = document.getElementById("discount");
 let items = [];
 let subtotal = 0;
 let discount = 0;
-
+// thẻ giảm giá 
 const coupons = {
     "SALE10": 0.1,
     "GIAM20": 0.2,
     "FREESHIP": 0.05,
-    "10DIEM": 1,
-    "COCOONFAKE": 0.2,
+    "10DIEM": 1, //1 = 100% giảm giá
+    "COCOONFAKE": 0.2, //0.2 = 20%
     "JOJO": 0.0001
 };
 
