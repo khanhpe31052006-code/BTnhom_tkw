@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/menu_button.css" />
+    <link rel="stylesheet" href="css/chitietsanpham.css">
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <!-- Khối sản phẩm chính -->
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="images/Gel-rua-mat-cocoon.jpg" alt="Gel rửa mặt Cocoon">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Gel rửa mặt cà phê Đắk Lắk 310ml</h1>
+                <div class="price">
+                    <del>290.000 ₫</del>
+                    <p class="new">230.000 ₫</p>
+                </div>
+                <div class="description">
+                    <b>Cho làn da mềm mại rạng rỡ.</b><br>
+                    Với công thức dịu nhẹ không chứa sulfate, gel rửa mặt cà phê Đắk Lắk có khả năng làm sạch hiệu quả mà không gây khô da, mang lại cảm giác sảng khoái cùng một làn da tươi mới, sạch thoáng và trông tràn đầy sinh lực để bắt đầu một ngày mới.
+                </div>
+                <div class="buttons">
+                    <button class="btn-buy-now buy-now"
+                            onclick="buyNow('Gel rửa mặt cà phê Đắk Lắk 310ml', 230000, 'images/Gel-rua-mat-cocoon.jpg')">
+                        Mua ngay
+                    </button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Gel rửa mặt cà phê Đắk Lắk 310ml', 230000 , 'images/Gel-rua-mat-cocoon.jpg')">
+                        <!-- cấu trúc:'tên sản phẩm',giá,'img' -->
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Mọi loại da</td></tr>
+                <tr><td>Dung Tích</td><td>310ml</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Công dụng</h2>
+            <p>
+                Làm sạch da hiệu quả mà không gây khô da
+                Mang lại cảm giác sảng khoái cùng một làn da sạch thoáng cho một ngày mới đầy sinh lực
+            </p>
+
+        </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <p>Lấy một lượng vừa đủ mát-xa nhẹ nhàng trên da ướt. Rửa sạch lại với nước. Dùng buổi sáng và tối. </p>
+        </div>
+
+        <div class="info-box">
+            <h2>Đặc điểm</h2>
+            <table>
+                <tr><td>Lượng dùng</td><td>Một lượng vừa đủ để làm sạch da mặt</td></tr>
+                <tr><td>Kết cấu</td><td>Dạng gel đặc màu nâu cà phê</td></tr>
+                <tr><td>Mùi hương</td><td>Hương cà phê thoang thoảng</td></tr>
+                <tr><td>Lưu ý</td><td>Dùng ngoài da, tránh dùng vào vùng mắt</td></tr>
+                <tr><td>Xuất xứ</td><td>Việt Nam</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Dầu cà phê:</b> Đây là loại dầu hoạt tính được trích lý từ 100% bã cà phê Arabica, chúng có sự kết hợp độc đáo giữa axit palmitic và axit linoleic mang lại khả năng thẩm thấu tuyệt vời, từ đó hỗ trợ quá trình giữ nước cho da, tăng cường sức mạnh của hàng rào bảo vệ da, giúp da trở nên khoẻ khoắn, mềm mại và rạng rỡ hơn. Ngoài ra, trong dầu cà phê hoạt tính còn chứa Tocopherols (vitamin E tự nhiên) giúp tăng cường chống ôxi hóa bằng cách tạo ra Nrf2 và giảm sản sinh các gốc tự do.</li>
+                <li><b>Chiết xuất cà phê Đắk Lắk:</b> Có tác dụng chống oxi hóa cho làn da, đặc biệt hàm lượng caffeine cao trong hạt cà phê nguyên chất Đắk Lắk sẽ giúp da trở nên săn chắc, đều màu hơn. Mùi hương nồng nàn của chiết xuất cà phê giúp khơi dậy cảm giác tràn đầy năng lượng vào mỗi buổi sáng.</li>
+                <li><b>Caffeine tinh khiết:</b> Được biết đến là một chất giúp tăng cường năng lượng tự nhiên thường được tìm thấy nhiều nhất trong cà phê. Đối với làn da, caffeine giúp chống ôxi hoá, giúp cho da trông tươi sáng và căng bóng hơn.</li>
+                <li><b>Các axit amin (amino acid):</b> Gồm Alanine, Arginine, Glycine, Histidine, Proline, Serine… Với kích thước phân tử nhỏ, có khả năng giữ nước, các axit amin dễ dàng thấm sâu, giúp duy trì độ ẩm, cải thiện kết cấu và khả năng phục hồi của da. Một số axit amin có khả năng chống oxy hóa, có thể kết hợp với các thành phần khác có tính năng phục hồi da trước những dấu hiệu lão hoá.</li>
+
+
+            </ul>
+            <h2>Thành phần chi tiết:</h2>
+            <p>
+                Thành phần đầy đủ theo INCI:
+
+                Aqua/Water, Coffea Robusta Seed Extract, Sodium Cocoyl Glycinate, Sodium Cocoyl Isethionate, Cocamidopropyl Betaine, Glycerin, Peg-7 Glyceryl Cocoate, Peg-120 Methyl Glucose Triisostearate, Polyquaternium-39, Coffea Arabica Seed Oil, Caffeine, Sodium Pca, Pca, Arginine, Glycine, Alanine, Aspartic Acid, Serine, Valine, Proline, Threonine, Ethylhexylglycerin, Isoleucine, Sodium Lactate, Histidine, Phenylalanine, Hydroxypropyl Starch Phosphate, Maltodextrin, Xanthan Gum, Hydroxyethylcellulose, Polysorbate 20, Trisodium Ethylenediamine Disuccinate, Phenoxyethanol, Menthyl Lactate.
+            </p>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="js/HeadervaFooter.js"></script>
+    <script src="js/add_cart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

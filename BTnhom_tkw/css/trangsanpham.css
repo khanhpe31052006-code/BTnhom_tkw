@@ -246,3 +246,14 @@ body {
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml,<svg fill='%23000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M5 1l7 7-7 7'/></svg>") !important;
 }
+/* --- Nút giỏ hàng theo tông Cocoon --- */
+.btn-light {
+    background-color: #4b2e1e; /* Nâu thương hiệu */
+    color: #fff; /* Icon trắng */
+    border: none;
+}
+
+    .btn-light:hover {
+        background-color: #6b3e2a; /* Nâu sáng hơn khi hover */
+        color: #fff;
+    }

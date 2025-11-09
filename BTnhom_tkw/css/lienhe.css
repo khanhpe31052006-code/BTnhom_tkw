@@ -1,96 +1,59 @@
-body {
-    background: #e7e0d4;
-    font-family: sans-serif;
+﻿body {
+    background-color: #f6f2ee;
 }
-.khung-form {
-    width: 80%;
-    max-width: 750px;
-    background: #f7f1e5;
-    padding: 35px 45px;
-    border-radius: 10px;
-    margin: 30px auto;
-    position: relative;
+.member-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
 }
 
-.dong-form {
-    position: absolute;
-    top: 18px;
-    right: 25px;
-    font-size: 28px;
-    cursor: pointer;
-}
+    .member-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
 
-h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-}
+    .member-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+    }
 
-.dong-input {
-    display: flex;
-    gap: 3%;
-}
+    .member-card .card-body {
+        padding: 15px;
+    }
 
-.nhom-input {
-    width: 48%;
-    position: relative;
-}
+    .member-card h5 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
 
-.nhom-input.day-du {
-    width: 100%;
-}
-
-label {
-    display: block;
-    color: #8e7e6e;
-    margin-bottom: 7px;
-}
-
-input, textarea {
-    width: 100%;
+    .member-card p {
+        font-size: 0.95rem;
+        color: #555;
+    }
+/* --- Nút giỏ hàng theo tông Cocoon --- */
+.btn-light {
+    background-color: #4b2e1e; /* Nâu thương hiệu */
+    color: #fff; /* Icon trắng */
     border: none;
-    border-bottom: 1px solid #c5b8a8;
-    background: transparent;
-    padding: 8px 0;
-    outline: none;
-    font-size: 16px;
 }
 
-textarea {
-    height: 100px;
+    .btn-light:hover {
+        background-color: #6b3e2a; /* Nâu sáng hơn khi hover */
+        color: #fff;
+    }
+.choose-topic {
+    background-color: #f9f9f9; /* nền nhẹ cho dễ nhìn */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.tb-loi {
-    display: none;
-    color: #c02727;
-    font-size: 13px;
-}
-
-.loi input,
-.loi textarea {
-    border-color: #c02727 !important;
-}
-
-.khung-nut {
-    display: flex;
-    gap: 20px;
-    margin-top: 25px;
-}
-
-.nut-gui {
-    background: #231f1a;
-    color: #fff;
-    padding: 16px;
-    border: none;
-    border-radius: 6px;
-    width: 50%;
-    cursor: pointer;
-}
-
-.nut-goi {
-    width: 50%;
-    padding: 16px;
-    background: transparent;
-    border: 2px solid #231f1a;
-    border-radius: 6px;
-    cursor: pointer;
-}
+    .choose-topic p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+    }

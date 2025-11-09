@@ -21,5 +21,9 @@
     document.body.appendChild(toast);
     setTimeout(() => toast.remove(), 3000);
 }
-
-
+/*hàm mua ngay*/
+function buyNow(name, price, image) {
+    const item = { name, price, image, quantity: 1 };
+    localStorage.setItem("buyNowItem", JSON.stringify(item));
+    window.location.href = "thanhtoan.html"; // Trang thanh toán
+}

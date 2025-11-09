@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/lienhe.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title></title>
     <link href="css/menu.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <style>
-
-    </style>
+    <link href="css/lienhe.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- NAV -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
@@ -24,9 +19,10 @@
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link" href="trangchu.html">Trang chủ</a></li>
-                    <li class="nav-item"><a class="nav-link " href="sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li>
                     <li class="nav-item"><a class="nav-link" href="khuyenmai.html">Khuyến mãi</a></li>
                     <li class="nav-item"><a class="nav-link active" href="lienhe.html">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dangkythanhvien.html">Đăng ký thành viên</a></li>
                 </ul>
                 <form class="d-flex me-2">
                     <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
@@ -36,46 +32,72 @@
         </div>
     </nav>
     <main>
-        <div class="khung-form" id="hop-lien-he">
-            <span class="dong-form" onclick="dongForm()">×</span>
-            <h2>Liên hệ với Cocoon</h2>
-
-            <form id="form-cocoon" novalidate>
-                <div class="dong-input">
-                    <div class="nhom-input">
-                        <label>Nhập tên của bạn*</label>
-                        <input type="text" id="ten">
-                        <p class="tb-loi">Vui lòng nhập tên của bạn!</p>
-                    </div>
-                    <div class="nhom-input">
-                        <label>Nhập số điện thoại*</label>
-                        <input type="text" id="sdt">
-                        <p class="tb-loi">Vui lòng nhập số điện thoại hợp lệ!</p>
+        <h1 class="text-center">Liên hệ</h1>
+        <div class="container  my-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+                <div class="col">
+                    <div class="card member-card text-center">
+                        <img src="images/thanhvien2.jpg" alt="Uyên Thy" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Uyên Thy</h5>
+                            <p class="card-text">Email: uyenthy@gmail.com</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="nhom-input day-du">
-                    <label>Nhập địa chỉ email*</label>
-                    <input type="email" id="email">
-                    <p class="tb-loi">Vui lòng nhập email hợp lệ!</p>
+                <div class="col">
+                    <div class="card member-card text-center">
+                        <img src="images/thanhvien3.jpg" alt="Thảo Duyên" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Thảo Duyên</h5>
+                            <p class="card-text">Email: thaoduyen@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="nhom-input day-du">
-                    <label>Nhập câu hỏi của bạn ở đây:*</label>
-                    <textarea id="cau-hoi"></textarea>
-                    <p class="tb-loi">Vui lòng nhập câu hỏi!</p>
+                <div class="col">
+                    <div class="card member-card text-center">
+                        <img src="images/thanhvien4.jpg" alt="Anh Thơ" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Anh Thơ</h5>
+                            <p class="card-text">Email: anhtho@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="khung-nut">
-                    <button type="submit" class="nut-gui">GỬI COCOON</button>
-                    <button type="button" class="nut-goi">📞 GỌI CHO COCOON</button>
+                <div class="col">
+                    <div class="card member-card text-center">
+                        <img src="images/thanhvien1.jpg" alt="Thiệu Trị" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Thiệu Trị</h5>
+                            <p class="card-text">Email: thieutri@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
-            </form>
+                <div class="col">
+                    <div class="card member-card text-center">
+                        <img src="images/thanhvien5.jpg" alt="Thiệu Trị" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Tuấn Khanh</h5>
+                            <p class="card-text">Email: tuankhanh@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5 choose-topic">
+            <h2 class="text-center mb-4">Lý do chọn đề tài</h2>
+            <p class="lead text-justify">
+                Trong khi nhiều đề tài Website khác đã phổ biến như quần áo hay thức ăn,
+                <strong>Cocoon</strong> mang nét độc đáo và ý nghĩa ứng dụng cao hơn khi hướng đến mỹ phẩm thuần chay thân thiện với môi trường.
+            </p>
+            <p class="text-justify">
+                Đề tài này vừa giúp ứng dụng kỹ năng lập trình Web, vừa góp phần truyền tải thông điệp <em>"xanh"</em> và bảo vệ thiên nhiên, tạo sự khác biệt so với các đề tài thông thường.
+            </p>
         </div>
     </main>
+    <footer>
+        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
     <div id="footer"></div>
-    <script src="js/HeadervaFooteChu.js"></script>
-    <script src="js/lienhe.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/HeadervaFooteChu.js"></script>
 </body>
 </html>

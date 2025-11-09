@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/menu_button.css" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/chitietsanpham.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--nút tìm kiếm-->
+</head>
+<body>
+    <div id="header"></div>
+    <!-- Khối sản phẩm chính -->
+    <main>
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="images/Nuoc-tay-trang-sen-hau-giang-500ml.jpg" alt="Cocoon">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Nước tẩy trang sen Hậu Giang 500ml</h1>
+                <div class="price">
+                    <del>309.000 ₫</del>
+                    <p class="new">275.500 ₫</p>
+                </div>
+                <div class="description">
+                    <b>Làm sạch lớp trang điểm và hỗ trợ hệ vi sinh.</b><br>
+                    Khai thác sức mạnh từ những đóa sen tinh khiết vùng Hậu Giang, kết hợp công nghệ micellar và NatraGem™ S150, phức hợp prebiotics cùng các hoạt chất làm dịu chuyên sâu, Nước Tẩy Trang Sen Hậu Giang dành riêng cho làn da rất nhạy cảm, giúp làm sạch hiệu quả lớp trang điểm, bụi bẩn, dầu thừa nhưng vẫn duy trì độ ẩm tự nhiên, bảo vệ hàng rào độ ẩm và hỗ trợ cân bằng hệ vi sinh cho da.
+                </div>
+                <div class="buttons">
+                    <button class="btn-buy-now buy-now"
+                            onclick="buyNow('Nước tẩy trang sen Hậu Giang 500ml', 275500, 'images/Nuoc-tay-trang-sen-hau-giang-500ml.jpg')">
+                        Mua ngay
+                    </button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Nước tẩy trang sen Hậu Giang 500ml', 275500 , 'images/Nuoc-tay-trang-sen-hau-giang-500ml.jpg')">
+                        <!-- cấu trúc:'tên sản phẩm',giá,'img' -->
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Da thường tới da khô, da nhạy cảm tới rất nhạy cảm</td></tr>
+                <tr><td>Dung Tích</td><td>500ml</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Công dụng</h2>
+            <p>
+                Làm sạch sâu lớp trang điểm, bụi bẩn, bã nhờn, dầu thừa... 1 cách hiệu quả
+                Dành cho da rất nhạy cảm, không cần rửa lại với nước, duy trì độ ẩm tự nhiên cho da, bảo vệ hàng rào độ ẩm, ngăn ngừa & giảm thiểu tình trạng thoát nước qua da.
+                Giúp cấp ẩm, làm dịu da và làm da trở nên mềm mại, mịn màng sau khi sử dụng
+                Hỗ trợ cân bằng hệ vi sinh vật trên da, giảm thiểu tình trạng kích ứng cho da.
+            </p>
+
+        </div>
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <p>
+                Thấm sản phẩm lên bông tẩy trang, nhẹ nhàng lau khắp mặt để làm sạch lớp trang điểm và bụi bẩn. Dịu nhẹ cho vùng môi và mắt.
+            </p>
+            <h2>Hướng dẫn bảo quản</h2>
+            <p>Đậy kín nắp sau khi sử dụng. Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp và nhiệt độ cao.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Đặc điểm</h2>
+            <table>
+                <tr><td>Lượng dùng</td><td>Một lượng vừa đủ cho bông tẩy trang.</td></tr>
+                <tr><td>Kết cấu</td><td>Dạng lỏng trong suốt</td></tr>
+                <tr><td>Mùi hương</td><td>Sản phẩm không mùi</td></tr>
+                <tr><td>Lưu ý</td><td>Chỉ dùng ngoài da</td></tr>
+                <tr><td>Xuất xứ</td><td>Việt Nam</td></tr>
+            </table>
+        </div>
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Chiếc xuất hoa sen:</b> Nhờ hàm lượng các flavonoid cao, chiết xuất sen có tác dụng hạn chế các gốc tự do sinh ra bởi tia UV và các căng thẳng từ môi trường. Ngoài ra, trong chiết xuất hoa sen có các loại đường như fructose và glucose nên có đặc tính giữ ẩm cao, hỗ trợ làm mềm và làm dịu làn da nhạy cảm.</li>
+                <li><b>NatraGem™ S150:</b> Gồm tổ hợp chất Polyglyceryl-4 Laurate/Sebacate và Polyglyceryl-4 Caprylate/Caprate, sở hữu những ưu điểm vượt trội: có nguồn gốc 100% từ thực vật, được chứng nhận hữu cơ bởi Ecocert; có khả năng hoà tan mạnh những chất ưa dầu có trong các sản phẩm trang điểm vì thế có khả năng làm sạch mạnh mẽ và cuốn trôi nhanh chóng lớp make up, bã nhờn và bụi bẩn trên da. Khi so sánh với các chất làm sạch khác, tổ hợp chất này đã được chứng minh hạn chế gây mất nước qua da và rất an toàn trên làn da thông qua các bài test in-Vivo.</li>
+                <li><b>Phức hợp prebiotics:</b> Với ưu điểm chọn lọc sinh học cao từ Bioecolia cùng các hoạt chất prebiotics tự nhiên gồm Xylitol, Inulin, Trehalose và Beta-glucan giúp hỗ trợ giữ cân bằng hệ vi sinh sau khi tẩy trang, đồng thời làm dịu da, cân bằng pH, củng cố hàng rào bảo vệ da.</li>
+
+            </ul>
+            <h2>Thành phần chi tiết:</h2>
+            <p>
+                AQUA/WATER, POLYGLYCERYL-4 CAPRYLATE/CAPRATE, POLYGLYCERYL-4 LAURATE/SEBACATE, BETAINE, NELUMBO NUCIFERA FLOWER EXTRACT, ALPHA-GLUCAN OLIGOSACCHARIDE, INULIN, BETA-GLUCAN, TREHALOSE, XYLITOL, PROPANEDIOL, GLYCERIN, GLYCERETH-26, SODIUM LACTATE, LACTIC ACID, HYDROXYACETOPHENONE, CETYLPYRIDINIUM CHLORIDE, TRISODIUM ETHYLENEDIAMINE DISUCCINATE, CITRIC ACID, O-CYMEN-5-OL, SODIUM BENZOATE, POTASSIUM SORBATE.
+            </p>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="js/HeadervaFooter.js"></script>
+    <script src="js/add_cart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

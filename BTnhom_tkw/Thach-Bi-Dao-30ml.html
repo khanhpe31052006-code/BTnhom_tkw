@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/chitietsanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header"></div>
+    <!-- Khối sản phẩm chính -->
+    <main>
+        <div class="container-sp">
+            <!-- Hình ảnh sản phẩm -->
+            <div class="product-image">
+                <img src="images/sanpham_20.png" alt="Cocoon">
+            </div>
+
+            <!-- Nội dung sản phẩm -->
+            <div class="product-details">
+                <h1>Thạch Bí Đao 30ml</h1>
+                <div class="price">
+                    <del>400.000 ₫</del>
+                    <p class="new">378.000 ₫</p>
+                </div>
+                <div class="description">
+                    Cấp ẩm và nuôi dưỡng.
+                </div>
+                <div class="buttons">
+                    <button class="btn-buy-now buy-now"
+                            onclick="buyNow('Thạch Bí Đao 30ml', 378000, 'images/sanpham_20.png')">
+                        Mua ngay
+                    </button>
+                    <button class="add-cart"
+                            onclick="themVaoGio('Thạch Bí Đao 30ml', 378000, 'images/sanpham_20.png')">
+                        Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Khối mô tả dài xuống -->
+        <div class="info-box">
+            <h2>Thông số sản phẩm</h2>
+            <table>
+                <tr><td>Thương Hiệu</td><td>Cocoon</td></tr>
+                <tr><td>Xuất xứ thương hiệu</td><td>Việt Nam</td></tr>
+                <tr><td>Nơi sản xuất</td><td>Vietnam</td></tr>
+                <tr><td>Loại da</td><td>Da mụn</td></tr>
+                <tr><td>Dung Tích</td><td>30ml</td></tr>
+            </table>
+        </div>
+
+        <div class="info-box">
+            <h2>Hướng dẫn sử dụng</h2>
+            <ul>
+                <li>Thoa đều một lượng vừa đủ lên da mặt.</li>
+                <li>Dùng 2 lần mỗi ngày, sáng và tối để đạt hiệu quả tốt nhất.</li>
+                <li>Tránh vùng mắt</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h2>Thành phần sản phẩm</h2>
+            <p><strong>Thành phần chính:</strong></p>
+            <ul>
+                <li><b>Chiết xuất bí đao:</b> kháng khuẩn, chống oxy hoá, làm dịu các đốm mụn sưng viêm.</li>
+                <li><b>5α-AVOCUTA® (Butyl Avocadate):</b> chiết xuất từ quả bơ: giúp kiểm soát lượng dầu thừa, điều tiết bã nhờn và ngăn ngừa tình trạng mụn.</li>
+                <li><b>TECA™:</b> chiết xuất từ rau má: phục hồi và làm lành các đốm mụn sưng viêm, tăng cường sản sinh collagen và hạn chế để lại thâm sẹo.</li>
+                <li><b>Niacinamide:</b> tăng cường hàng rào bảo vệ da, giảm viêm và điều hoà sự tiết bã nhờn của da.</li>
+            </ul>
+            <h2>Thành phần đầy đủ:</h2>
+            <p>
+                Aqua/Water, Niacinamide, Butyl Avocadate, Butylene Glycol, Sodium Acrylates Copolymer, Betaine, Benincasa Cerifera Fruit Extract, Glycerin, Propanediol, Madecassic Acid, Asiatic Acid, Asiaticoside, Centella Asiatica Extract, Pentylene Glycol, Ferulic Acid, Potassium Azeloyl Diglycinate, Oleyl Erucate, Coco-Caprylate/Caprate, Dicaprylyl Carbonate, Epilobium Angustifolium Flower/Leaf/Stem Extract, Caprylic/Capric Triglyceride, Aloe Barbadensis Leaf Juice, Bisabolol, Glycereth-26, Lecithin, Phellodendron Amurense Bark Extract, Allantoin, Ethylhexylglycerin, Tocopherol, Hydroxyacetophenone, Trisodium Ethylenediamine Disuccinate, Phenoxyethanol, Melaleuca Alternifolia Leaf Oil, Rosmarinus Officinalis Leaf Oil.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h2>Mô tả chi tiết</h2>
+            <p>
+                Kem Dưỡng Cocoon Dạng Thạch Bí Đao Giảm Dầu & Mụn là sản phẩm kem dưỡng da đến từ thương hiệu mỹ phẩm Cocoon của Việt Nam, với sự kết hợp giữa chiết xuất bí đao thanh mát, 5α-AVOCUTA® được chưng cất phân tử từ dầu quả bơ và TECA™ trích ly từ rau má, mang lại độ ẩm cân bằng, giảm lượng dầu thừa và cải thiện tình trạng mụn. Kết cấu mỏng nhẹ tan nhanh vào da tạo cảm giác thông thoáng, dễ chịu không gây nặng mặt hay bí bách trên da.
+            </p>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="js/HeadervaFooter.js"></script>
+    <script src="js/add_cart.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

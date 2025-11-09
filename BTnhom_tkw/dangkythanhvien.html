@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/dangky.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="trangchu.html"><i class="fa fa-leaf"></i> COCOON</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link " href="trangchu.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link " href="sanpham.html">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link " href="khuyenmai.html">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link " href="lienhe.html">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="dangkythanhvien.html">Đăng ký thành viên</a></li>
+                </ul>
+                <form class="d-flex me-2">
+                    <input class="form-control form-control-sm" type="search" placeholder="Tìm kiếm...">
+                </form>
+                <a class="btn btn-sm btn-light" href="giohang.html"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="khung-form" id="hop-lien-he">
+            <span class="dong-form" onclick="dongForm()">×</span>
+            <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+
+            <form id="form-cocoon" novalidate>
+                <div class="dong-input">
+                    <div class="nhom-input">
+                        <label>Nhập tên của bạn*</label>
+                        <input type="text" id="ten">
+                        <p class="tb-loi">Vui lòng nhập tên của bạn!</p>
+                    </div>
+                    <div class="nhom-input">
+                        <label>Nhập số điện thoại*</label>
+                        <input type="text" id="sdt">
+                        <p class="tb-loi">Vui lòng nhập số điện thoại hợp lệ!</p>
+                    </div>
+                </div>
+
+                <div class="nhom-input day-du">
+                    <label>Nhập địa chỉ email*</label>
+                    <input type="email" id="email">
+                    <p class="tb-loi">Vui lòng nhập email hợp lệ!</p>
+                </div>
+
+                <div class="khung-nut">
+                    <button type="submit" class="nut-gui">Đăng ký thành viên</button>
+                    <button type="button" class="nut-goi">📞 GỌI CHO COCOON</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        © 2025 Cocoon Việt Nam • <i class="fa fa-leaf"></i> Thuần chay – Tự nhiên – Hiệu quả
+    </footer>
+    <script src="js/dangky.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
